@@ -9,7 +9,6 @@ body {
   --surface-color: #fff;
   --curve: 40;
 }
-
 * {
   box-sizing: border-box;
 }

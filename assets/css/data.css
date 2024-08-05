@@ -1,4 +1,44 @@
-.custom-container {
+/* General styles for background and text color */
+.container-fluid.custom-container {
+	background-color: black; /* Set background to black */
+  }
+  
+  .data-blank-header-wrapper {
+	background-color: rgba(0, 0, 0, 0.5); /* Darker background for headers */
+	padding: 10px;
+	border-radius: 8px;
+  }
+  
+  .data-blank-icon {
+	color: #98FF98; /* Mint color for icons */
+  }
+  
+  .data-blank-lead,
+  .data-blank-list-item,
+  .data-blank-number,
+  .data-blank-category,
+  .display-5 {
+	color: #98FF98; /* Mint color for text */
+	font-weight: bold; /* Make all text bold */
+  }
+  
+  .data-blank-list-item {
+	color: #98FF98; /* Mint color for list items */
+  }
+  
+  .data-blank-number {
+	color: #98FF98; /* Mint color for numbers */
+  }
+  
+  .data-blank-category {
+	color: #98FF98; /* Mint color for categories */
+  }
+  
+  .data-blank-border {
+	border-top: 2px solid #98FF98; /* Mint color for borders */
+  }
+  
+  .custom-container {
 	box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.3), 0px -10px 20px -10px rgba(0, 0, 0, 0.3);
 	padding: 10px;
 	padding-left: 0;
@@ -7,6 +47,7 @@
 	margin-right: 0;
 	max-width: 100%;
   }
+  
   .container-fluid {
 	padding-right: 0;
   }
@@ -77,6 +118,7 @@
 	margin-right: 0.5rem;
 	width: 24px;
   	height: 24px;
+    fill: #007bff;
   }
   
   .header-wrapper h1,
