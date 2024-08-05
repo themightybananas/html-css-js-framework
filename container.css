@@ -1,0 +1,14 @@
+@import url(//fonts.googleapis.com/css?family=Montserrat:300,400,500);
+.service-14 {
+  font-family: "Montserrat", sans-serif;
+	color: #8d97ad;
+  font-weight: 300;
+}
+.carousel-half-height .carousel-inner {
+	height: 75vh;
+  }
+  
+  .carousel-half-height .carousel-inner img {
+	height: 100%;
+	object-fit: cover;
+  }
