@@ -5,9 +5,8 @@
   font-weight: 300;
 }
 .carousel-half-height .carousel-inner {
-	height: 75vh;
+	height: 90vh;
   }
-  
   .carousel-half-height .carousel-inner img {
 	height: 100%;
 	object-fit: cover;
