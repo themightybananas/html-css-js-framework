@@ -1,5 +1,5 @@
 .custom-container {
-	background-color: #ffffff; /* White background for the container */
+	background-color: #ffffff; 
   }
   
   .section-header {
@@ -23,29 +23,29 @@
   }
   
   .lead {
-	color: #000000; /* Black text color for better readability */
+	color: #000000; 
   }
   
   .custom-list {
 	padding-left: 0;
-	list-style: none; /* Remove default list style */
+	list-style: none; 
   }
   
   .custom-list li {
-	position: relative; /* Position relative for the ::before pseudo-element */
+	position: relative; 
 	color: #000000;
 	font-size: 1.1rem;
-	padding-left: 25px; /* Add space for the black dot */
-	margin-bottom: 10px; /* Add space between list items */
+	padding-left: 25px; 
+	margin-bottom: 10px; 
   }
   
   .custom-list li::before {
-	content: '•'; /* Unicode for bullet point */
+	content: '•'; 
 	position: absolute;
 	left: 0;
-	color: #000000; /* Black color for the dot */
-	font-size: 1.5rem; /* Adjust size of the dot */
-	line-height: 1; /* Ensure dot is vertically centered */
+	color: #000000; 
+	font-size: 1.5rem; 
+	line-height: 1; 
   }
   
   

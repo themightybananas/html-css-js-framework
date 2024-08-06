@@ -15,7 +15,7 @@ body {
 
 .cards {
   display: flex;
-  flex-wrap: nowrap; /* Ensure cards do not wrap to the next line */
+  flex-wrap: nowrap; 
   gap: 0.10rem;
 }
 
@@ -28,7 +28,7 @@ body {
   position: relative;
   display: block;
   height: 310px;
-  width: 200px; /* Reduced width of each card */
+  width: 200px; 
   border-radius: calc(var(--curve) * 1px);
   overflow: hidden;
   text-decoration: none;
@@ -48,7 +48,7 @@ body {
   left: 0;
   right: 0;
   background-color: var(--surface-color);
-  transform: translateY(0); /* Changed from translateY(100%) to translateY(0) */
+  transform: translateY(0); 
   transition: transform 0.2s ease-in-out;
 }
 
@@ -114,7 +114,7 @@ body {
 
 .custom-carousel-control {
   position: absolute;
-  bottom: 10px; /* Adjust this value as needed */
+  bottom: 10px; 
   width: 100%;
   display: flex;
   justify-content: space-between;
