@@ -26,17 +26,31 @@
 	color: #000000; /* Black text color for better readability */
   }
   
-  .list-unstyled {
+  .custom-list {
 	padding-left: 0;
+	list-style: none; /* Remove default list style */
   }
   
-  .list-unstyled li {
+  .custom-list li {
+	position: relative; /* Position relative for the ::before pseudo-element */
 	color: #000000;
 	font-size: 1.1rem;
+	padding-left: 25px; /* Add space for the black dot */
+	margin-bottom: 10px; /* Add space between list items */
   }
   
+  .custom-list li::before {
+	content: '•'; /* Unicode for bullet point */
+	position: absolute;
+	left: 0;
+	color: #000000; /* Black color for the dot */
+	font-size: 1.5rem; /* Adjust size of the dot */
+	line-height: 1; /* Ensure dot is vertically centered */
+  }
+  
+  
   .bi-check-circle {
-	color: #0B60B0;
+	color: #000000;
 	margin-right: 8px;
   }
   
@@ -63,44 +77,6 @@
 	width: 80px;
 	background: #28ABE3;
     margin-bottom: 60px;
-}
-
-.services .service-block.color-bg {
-	background: #28ABE3;
-	color: #fff;
-}
-.services .service-block .service-icon {
-	margin-bottom: 30px;
-}
-.services .service-block.color-bg i, .services .service-block.color-bg h3, .services .service-block.color-bg p {
-	color: #fff;
-}
-.services .service-block h3 {
-	color: #fff;
-	font-size: 18px;
-	text-transform: uppercase;
-	font-weight: bold;
-}
-.services .service-block p {
-	font-size: 14px;
-	color: #fff;
-}
-.services .service-block h3 {
-	color: #333;
-	font-size: 18px;
-	text-transform: uppercase;
-	font-weight: bold;
-}
-.services .service-block p {
-	font-size: 14px;
-	color: #666;
-}
-.services .service-block.color-bg i, .services .service-block.color-bg h3, .services .service-block.color-bg p {
-	color: #fff;
-}
-.services .service-block i {
-	font-size: 40px;
-	color: #28ABE3;
 }
 .header-wrapper {
 	display: flex;

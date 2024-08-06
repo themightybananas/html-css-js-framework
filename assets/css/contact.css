@@ -7,7 +7,6 @@
   .contact-header {
     color: var(--contact-header-color);
   }
-  
   .contact-info-box {
     background-color: var(--contact-box-bg-color);
     border: 1px solid var(--contact-border-color);
