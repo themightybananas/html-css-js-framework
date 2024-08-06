@@ -1,52 +1,45 @@
-/* General styles for background and text color */
-.container-fluid.custom-container {
-	background-color: black; /* Set background to black */
+.custom-container {
+	background-color: #ffffff; /* White background for the container */
   }
   
-  .data-blank-header-wrapper {
-	background-color: rgba(0, 0, 0, 0.5); /* Darker background for headers */
-	padding: 10px;
+  .section-header {
+	border-bottom: 2px solid #0B60B0;
+	padding-bottom: 10px;
+  }
+  
+  .section-icon {
+	color: #0B60B0;
+  }
+  
+  .data-box {
+	border: 2px solid #0B60B0;
 	border-radius: 8px;
+	background-color: #f0f4f7;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
-  .data-blank-icon {
-	color: #98FF98; /* Mint color for icons */
+  .data-icon {
+	color: #40A2D8;
   }
   
-  .data-blank-lead,
-  .data-blank-list-item,
-  .data-blank-number,
-  .data-blank-category,
-  .display-5 {
-	color: #98FF98; /* Mint color for text */
-	font-weight: bold; /* Make all text bold */
+  .lead {
+	color: #000000; /* Black text color for better readability */
   }
   
-  .data-blank-list-item {
-	color: #98FF98; /* Mint color for list items */
-  }
-  
-  .data-blank-number {
-	color: #98FF98; /* Mint color for numbers */
-  }
-  
-  .data-blank-category {
-	color: #98FF98; /* Mint color for categories */
-  }
-  
-  .data-blank-border {
-	border-top: 2px solid #98FF98; /* Mint color for borders */
-  }
-  
-  .custom-container {
-	box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.3), 0px -10px 20px -10px rgba(0, 0, 0, 0.3);
-	padding: 10px;
+  .list-unstyled {
 	padding-left: 0;
-	padding-right: 0;
-	margin-left: 0;
-	margin-right: 0;
-	max-width: 100%;
   }
+  
+  .list-unstyled li {
+	color: #000000;
+	font-size: 1.1rem;
+  }
+  
+  .bi-check-circle {
+	color: #0B60B0;
+	margin-right: 8px;
+  }
+  
   
   .container-fluid {
 	padding-right: 0;

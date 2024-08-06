@@ -1,0 +1,56 @@
+
+  .contact-section {
+    background: linear-gradient(180deg, var(--contact-medium) 0%, var(--contact-dark) 100%);
+    padding: 2rem 0;
+  }
+  
+  .contact-header {
+    color: var(--contact-header-color);
+  }
+  
+  .contact-info-box {
+    background-color: var(--contact-box-bg-color);
+    border: 1px solid var(--contact-border-color);
+    border-radius: 10px;
+    padding: 1.5rem;
+    color: var(--contact-text-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-info-box h6 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: var(--contact-header-color);
+  }
+  
+  .contact-info-box p {
+    font-size: 1rem;
+    margin: 0;
+  }
+  
+  .bg-contact-dark {
+    background-color: var(--contact-header-color);
+    color: #fff;
+  }
+  
+  .bg-contact-second {
+    background-color: var(--contact-second-color);
+    color: #fff;
+  }
+  
+  .bg-contact-third {
+    background-color: var(--contact-third-color);
+    color: #fff;
+  }
+  
+  .map-container {
+    height: 100%;
+    position: relative;
+  }
+  
+  .map-iframe {
+    border: 5px;
+    height: 100%;
+    width: 100%;
+  }
+  
