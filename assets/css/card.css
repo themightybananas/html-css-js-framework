@@ -134,17 +134,86 @@ body {
   box-shadow: 0 0 .125rem rgba(0,0,0,.125);
   text-decoration: none;
 }
+
 .berita-img-top {
   width: 100%;
   height: auto;
 }
+
 .berita-body {
-  padding: 1.25rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
+
 .berita-title {
   font-size: 1.25rem;
-  margin-bottom: .5rem;
+  margin-bottom: 5px;
 }
+
 .berita-text {
-  margin-bottom: 1rem;
+  margin-bottom: 10px;
+}
+
+.berita-btn-container {
+  margin-top: auto;
+  display: flex;
+  padding: 10px;
+  padding-bottom: 0.5rem;
+}
+
+.berita-btn {
+  margin-top: auto;
+}
+
+.slider-container {
+  margin-top: 20px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+}
+
+.slider-btn-prev-btn {
+  border: none;
+  background-color: bisque;
+}
+
+.slider-btn-next-btn {
+  border: none;
+  background-color: bisque;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider-btn-container {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
 }
