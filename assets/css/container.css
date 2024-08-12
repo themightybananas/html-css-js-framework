@@ -4,9 +4,10 @@
 	color: #8d97ad;
   font-weight: 300;
 }
-.carousel-half-height .carousel-inner {
-	height: 90vh;
-  }
+#carouselExampleCaptions .carousel-item {
+  max-height: 800px; /* Adjust this value to your desired height */
+  overflow: hidden;
+}
   .carousel-half-height .carousel-inner img {
 	height: 100%;
 	object-fit: cover;
