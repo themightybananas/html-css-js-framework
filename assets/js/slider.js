@@ -1,46 +1,34 @@
+const slider = document.querySelector('.slider');
+const slides = document.querySelectorAll('.slide');
+const prevBtn = document.querySelector('.prev-btn');
+const nextBtn = document.querySelector('.next-btn');
 let currentIndex = 0;
+const totalSlides = Math.min(slides.length, 2); // Limit to the first two slides
 
-function showSlide(index) {
-    const slides = document.querySelectorAll('.slide');
-    const totalSlides = slides.length;
-    const maxVisibleSlides = 6;
+function updateSliderPosition() {
+    const slideWidth = slides[0].clientWidth; // Width of a single slide
+    const offset = currentIndex * slideWidth; // Corrected offset calculation
+    slider.style.transform = `translateX(-${offset}px)`;
+}
 
-    // Ensure only 6 slides are visible
-    slides.forEach((slide, i) => {
-        if (i >= currentIndex && i < currentIndex + maxVisibleSlides) {
-            slide.style.display = 'block';
-        } else {
-            slide.style.display = 'none';
-        }
-    });
+prevBtn.addEventListener('click', () => {
+    if (currentIndex > 0) {
+        currentIndex--;
+    }
+    updateSliderPosition();
+});
 
-    if (index >= totalSlides) {
+nextBtn.addEventListener('click', () => {
+    if (currentIndex < totalSlides - 1) {
+        currentIndex++;
+    } else {
+        // Go back to the first slide
         currentIndex = 0;
-    } else if (index < 0) {
-        currentIndex = totalSlides - 1;
-    } else {
-        currentIndex = index;
     }
+    updateSliderPosition();
+});
 
-    const offset = -currentIndex * 100;
-    document.querySelector('.slider').style.transform = `translateX(${offset}%)`;
-}
+window.addEventListener('resize', updateSliderPosition);
 
-function nextSlide() {
-    if (currentIndex === 1) {
-        showSlide(currentIndex - 1);
-    } else {
-        showSlide(currentIndex + 1);
-    }
-}
-
-function prevSlide() {
-    if (currentIndex === 0) {
-        showSlide(currentIndex); // Stay on the same slide
-    } else {
-        showSlide(currentIndex - 1);
-    }
-}
-
-// Initial call to show the first set of slides
-showSlide(currentIndex);
+// Initial position update
+updateSliderPosition();

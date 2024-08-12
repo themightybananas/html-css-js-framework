@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="style.css" />
     <!-- Link to the external CSS file -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./assets/js/slider.js"></script>
+    <script src="./assets/js/slider.js" defer></script>
   </head>
   <body>
     <!-- NAVBAR -->
@@ -697,6 +697,17 @@
       </div>
     </section>
 
+
+
+
+
+
+
+
+
+
+
+
     <!-- PROFIL SEKOLAH -->
     <div class="container py-4 py-lg-6">
       <div class="row align-items-center">
@@ -813,109 +824,12 @@
       </div>
     </div>
 
-    <!-- BERITA -->
-    <div class="d-flex flex-column mt-5 mb-5">
-      <div class="slider-container mr-4 ml-2">
-        <div class="slider">
-          <div class="slide">
-            <div class="row">
-              <div class="col">
-                <div class="berita">
-                  <img src="https://via.placeholder.com/300x200" class="berita-img-top" alt="News Image" />
-                  <div class="berita-body">
-                    <h5 class="berita-title">News Title 1</h5>
-                    <p class="berita-text">
-                      This is a short description of the news content. It provides a brief overview of the main points.
-                    </p>
-                    <div class="berita-btn-container">
-                      <a href="#" class="berita-btn">Read More</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="berita">
-                  <img src="https://via.placeholder.com/300x200" class="berita-img-top" alt="News Image" />
-                  <div class="berita-body">
-                    <h5 class="berita-title">News Title 2</h5>
-                    <p class="berita-text">
-                      This is a short description of the news content. It provides a brief overview of the main points.
-                    </p>
-                    <div class="berita-btn-container">
-                      <a href="#" class="berita-btn">Read More</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="berita">
-                  <img src="https://via.placeholder.com/300x200" class="berita-img-top" alt="News Image" />
-                  <div class="berita-body">
-                    <h5 class="berita-title">News Title 3</h5>
-                    <p class="berita-text">
-                      This is a short description of the news content. It provides a brief overview of the main points.
-                    </p>
-                    <div class="berita-btn-container">
-                      <a href="#" class="berita-btn">Read More</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="slide">
-            <div class="row">
-              <div class="col">
-                <div class="berita">
-                  <img src="https://via.placeholder.com/300x200" class="berita-img-top" alt="News Image" />
-                  <div class="berita-body">
-                    <h5 class="berita-title">News Title 4</h5>
-                    <p class="berita-text">
-                      This is a short description of the news content. It provides a brief overview of the main points.
-                    </p>
-                    <div class="berita-btn-container">
-                      <a href="#" class="berita-btn">Read More</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="berita">
-                  <img src="https://via.placeholder.com/300x200" class="berita-img-top" alt="News Image" />
-                  <div class="berita-body">
-                    <h5 class="berita-title">News Title 5</h5>
-                    <p class="berita-text">
-                      This is a short description of the news content. It provides a brief overview of the main points.
-                    </p>
-                    <div class="berita-btn-container">
-                      <a href="#" class="berita-btn">Read More</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="berita">
-                  <img src="https://via.placeholder.com/300x200" class="berita-img-top" alt="News Image" />
-                  <div class="berita-body">
-                    <h5 class="berita-title">News Title 6</h5>
-                    <p class="berita-text">
-                      This is a short description of the news content. It provides a brief overview of the main points.
-                    </p>
-                    <div class="berita-btn-container">
-                      <a href="#" class="berita-btn">Read More</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="slider-btn-container">
-          <button class="slider-btn prev-btn" onclick="prevSlide()">❮</button>
-          <button class="slider-btn next-btn" onclick="nextSlide()">❯</button>
-        </div>
-      </div>
-    </div>
+
+
+
+
+
+    
 
     <!-- DATA -->
     <div class="container-fluid custom-container mb-5 mt-5 pt-5 pb-5 pl-5 pr-5">
@@ -1078,6 +992,118 @@
         </div>
       </div>
     </div>
+
+
+
+
+        <!-- BERITA -->
+        <div class="d-flex flex-column mt-5 mb-5">
+          <div class="slider-container mr-5">
+            <button class="slider-btn prev-btn">&#10094;</button>
+            <div class="slider">
+              <div class="slide">
+                <div class="row">
+                  <div class="col">
+                    <div class="berita">
+                      <img src="https://via.placeholder.com/300x200" class="berita-img-top" alt="News Image" />
+                      <div class="berita-body">
+                        <h5 class="berita-title">News Title 1</h5>
+                        <p class="berita-text">
+                          This is a short description of the news content. It provides a brief overview of the main points.
+                        </p>
+                        <div class="berita-btn-container">
+                          <a href="#" class="berita-btn">Read More</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="berita">
+                      <img src="https://via.placeholder.com/300x200" class="berita-img-top" alt="News Image" />
+                      <div class="berita-body">
+                        <h5 class="berita-title">News Title 2</h5>
+                        <p class="berita-text">
+                          This is a short description of the news content. It provides a brief overview of the main points.
+                        </p>
+                        <div class="berita-btn-container">
+                          <a href="#" class="berita-btn">Read More</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="berita">
+                      <img src="https://via.placeholder.com/300x200" class="berita-img-top" alt="News Image" />
+                      <div class="berita-body">
+                        <h5 class="berita-title">News Title 3</h5>
+                        <p class="berita-text">
+                          This is a short description of the news content. It provides a brief overview of the main points.
+                        </p>
+                        <div class="berita-btn-container">
+                          <a href="#" class="berita-btn">Read More</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="row">
+                  <div class="col">
+                    <div class="berita">
+                      <img src="https://via.placeholder.com/300x200" class="berita-img-top" alt="News Image" />
+                      <div class="berita-body">
+                        <h5 class="berita-title">News Title 4</h5>
+                        <p class="berita-text">
+                          This is a short description of the news content. It provides a brief overview of the main points.
+                        </p>
+                        <div class="berita-btn-container">
+                          <a href="#" class="berita-btn">Read More</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="berita">
+                      <img src="https://via.placeholder.com/300x200" class="berita-img-top" alt="News Image" />
+                      <div class="berita-body">
+                        <h5 class="berita-title">News Title 5</h5>
+                        <p class="berita-text">
+                          This is a short description of the news content. It provides a brief overview of the main points.
+                        </p>
+                        <div class="berita-btn-container">
+                          <a href="#" class="berita-btn">Read More</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="berita">
+                      <img src="https://via.placeholder.com/300x200" class="berita-img-top" alt="News Image" />
+                      <div class="berita-body">
+                        <h5 class="berita-title">News Title 6</h5>
+                        <p class="berita-text">
+                          This is a short description of the news content. It provides a brief overview of the main points.
+                        </p>
+                        <div class="berita-btn-container">
+                          <a href="#" class="berita-btn">Read More</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="slider-btn next-btn">&#10095;</button>
+          </div>
+        </div>
+
+
+
+        
+
+
+
 
     <!-- CONTACT -->
     <section class="contact-section text-center bg-dark mt-5">
