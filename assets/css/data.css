@@ -34,7 +34,7 @@
   .custom-list li {
 	position: relative; 
 	color: #000000;
-	font-size: 1.1rem;
+	font-size: 1.2rem;
 	padding-left: 25px; 
 	margin-bottom: 10px; 
   }
@@ -69,6 +69,7 @@
 .title p {
 	color: #848484;
 	margin: 0 auto;
+	font-size: 25px;
 }
 .border {
 	height: 2px;

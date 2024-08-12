@@ -12,97 +12,97 @@ body {
 * {
   box-sizing: border-box;
 }
-
-.cards {
-  display: flex;
-  flex-wrap: nowrap; 
-  gap: 0.10rem;
+.py-5 {
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
 }
-
-.card-item {
-  flex: 1;
-  min-width: 0;
+.pt-5 {
+  padding-top: 3rem !important;
 }
-
+.my-5 {
+  margin-top: 3rem !important;
+  margin-bottom: 3rem !important;
+}
+.border-0 {
+  border: 0 !important;
+}
+.position-relative {
+  position: relative !important;
+}
+.shadow-lg {
+  box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%) !important;
+}
 .card {
   position: relative;
-  display: block;
-  height: 310px;
-  width: 200px; 
-  border-radius: calc(var(--curve) * 1px);
-  overflow: hidden;
-  text-decoration: none;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.card__image {
-  width: 100%;
-  height: 120px;
-  border-radius: calc(var(--curve) * 1px) calc(var(--curve) * 1px) 0 0;
-  object-fit: cover;
-}
-
-.card__overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: var(--surface-color);
-  transform: translateY(0); 
-  transition: transform 0.2s ease-in-out;
-}
-
-.card__header {
-  position: relative;
+  display: -webkit-flex;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.5em;
-  border-radius: calc(var(--curve) * 1px) 0 0 0;
-  background-color: var(--surface-color);
-  transform: translateY(0);
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 5px 5px 0 0 solid rgba(0,0,0,0.125);
+  border-radius: .25rem;
 }
 
-.card__arc {
-  width: 80px;
-  height: 80px;
-  position: absolute;
-  bottom: 100%;
-  right: 0;
-  z-index: 1;
+.member-profile {
+  top: -50px;
+  left: 0;
+}
+.text-center {
+  text-align: center !important;
+}
+.w-100 {
+  width: 100% !important;
+}
+.position-absolute {
+  position: absolute !important;
+}
+.member-profile img {
+  width: 100px;
+  height: 100px;
+}
+.rounded-circle {
+  border-radius: 40% !important;
+}
+.mx-auto {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+.shadow-sm {
+  box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%) !important;
 }
 
-.card__thumb {
-  flex-shrink: 0;
-  width: 40px;
-  height: 40px;
-  border-radius: 75%;
-}
 
-.card__title {
-  font-size: 1rem;
-  color: #6A515E;
-  font-weight: bold;
-}
 
-.card__tagline {
-  display: block;
-  margin: 1em 0;
-  font-size: 0.9rem;
-  color: #D7BDCA;
-  font-family: "Arial", sans-serif;
-}
 
-.card__description {
-  padding: 0 1em 1em;
-  margin: 0;
-  color: #D7BDCA;
-  font-family: "Arial", sans-serif;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .service-14 {
   color: #000;
@@ -127,6 +127,7 @@ body {
 .text-uppercase {
   font-size: 0.8rem;
 }
+/* Default styles (for larger screens) */
 .berita {
   flex: 1;
   margin: 10px;
@@ -165,6 +166,80 @@ body {
 .berita-btn {
   margin-top: auto;
 }
+
+/* Media Queries for different screen sizes */
+
+/* For phones */
+@media (max-width: 576px) {
+  .berita {
+    margin: 5px; /* Adjust margin for smaller screens */
+  }
+
+  .berita-body {
+    padding: 0.5rem; /* Reduce padding for smaller screens */
+    height: auto; /* Adjust height for smaller screens */
+  }
+
+  .berita-title {
+    font-size: 1px; /* Smaller font size for titles on phones */
+  }
+
+  .berita-text {
+    margin-bottom: 5px; /* Reduce margin for text on phones */
+    font-size: 5px;
+  }
+
+  .berita-btn-container {
+    padding: 5px; /* Reduce padding for buttons */
+    font-size: 8px; /* Smaller font size for titles on phones */
+  }
+}
+
+/* For tablets and small screens */
+@media (min-width: 576px) and (max-width: 768px) {
+  .berita {
+    margin: 8px; /* Adjust margin for medium screens */
+  }
+
+  .berita-body {
+    padding: 0.75rem; /* Adjust padding for medium screens */
+  }
+
+  .berita-title {
+    font-size: 1.125rem; /* Slightly smaller font size */
+  }
+}
+
+/* For larger screens */
+@media (min-width: 768px) and (max-width: 992px) {
+  .berita {
+    margin: 10px; /* Default margin for larger screens */
+  }
+
+  .berita-body {
+    padding: 1rem; /* Default padding for larger screens */
+  }
+
+  .berita-title {
+    font-size: 1.25rem; /* Default font size */
+  }
+}
+
+/* For very large screens */
+@media (min-width: 992px) {
+  .berita {
+    margin: 15px; /* Adjust margin for very large screens */
+  }
+
+  .berita-body {
+    padding: 1.25rem; /* Increased padding for very large screens */
+  }
+
+  .berita-title {
+    font-size: 1.5rem; /* Larger font size for titles on very large screens */
+  }
+}
+
 .slider-container {
   position: relative;
   width: 100%;
@@ -185,6 +260,7 @@ body {
 .slider-btn {
   position: absolute;
   top: 50%;
+  border-radius: 5px;
   transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
