@@ -8,6 +8,9 @@
   max-height: 800px; /* Adjust this value to your desired height */
   overflow: hidden;
 }
+.txt-carousel{
+  text-shadow: 6px 5px 4px #000000;
+}
   .carousel-half-height .carousel-inner img {
 	height: 100%;
 	object-fit: cover;

@@ -157,78 +157,6 @@ body {
   margin-top: auto;
 }
 
-/* Media Queries for different screen sizes */
-
-/* For phones */
-@media (max-width: 576px) {
-  .berita {
-    margin: 5px; /* Adjust margin for smaller screens */
-  }
-
-  .berita-body {
-    padding: 0.5rem; /* Reduce padding for smaller screens */
-    height: auto; /* Adjust height for smaller screens */
-  }
-
-  .berita-title {
-    font-size: 1px; /* Smaller font size for titles on phones */
-  }
-
-  .berita-text {
-    margin-bottom: 5px; /* Reduce margin for text on phones */
-    font-size: 5px;
-  }
-
-  .berita-btn-container {
-    padding: 5px; /* Reduce padding for buttons */
-    font-size: 8px; /* Smaller font size for titles on phones */
-  }
-}
-
-/* For tablets and small screens */
-@media (min-width: 576px) and (max-width: 768px) {
-  .berita {
-    margin: 8px; /* Adjust margin for medium screens */
-  }
-
-  .berita-body {
-    padding: 0.75rem; /* Adjust padding for medium screens */
-  }
-
-  .berita-title {
-    font-size: 1.125rem; /* Slightly smaller font size */
-  }
-}
-
-/* For larger screens */
-@media (min-width: 768px) and (max-width: 992px) {
-  .berita {
-    margin: 10px; /* Default margin for larger screens */
-  }
-
-  .berita-body {
-    padding: 1rem; /* Default padding for larger screens */
-  }
-
-  .berita-title {
-    font-size: 1.25rem; /* Default font size */
-  }
-}
-
-/* For very large screens */
-@media (min-width: 992px) {
-  .berita {
-    margin: 15px; /* Adjust margin for very large screens */
-  }
-
-  .berita-body {
-    padding: 1.25rem; /* Increased padding for very large screens */
-  }
-
-  .berita-title {
-    font-size: 1.5rem; /* Larger font size for titles on very large screens */
-  }
-}
 
 .slider-container {
   position: relative;
@@ -260,11 +188,11 @@ body {
 }
 
 .prev-btn {
-  left: 16px;
+  left: 10px;
   border-radius: 0 5px 5px 0;
 }
 
 .next-btn {
-  right: 16px;
+  right: 10px;
   border-radius: 5px 0 0 5px;
 }
