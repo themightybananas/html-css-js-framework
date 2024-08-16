@@ -1,0 +1,127 @@
+.bsb-project-1-item {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .bsb-overlay-hover {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .bsb-overlay-hover img {
+    transition: transform 0.3s ease;
+  }
+  
+  .bsb-overlay-hover:hover img,
+  .bsb-overlay-hover:focus img {
+    transform: scale(1.1);
+  }
+  
+  .bsb-overlay-hover figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 1rem;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+  }
+  
+  .bsb-overlay-hover:hover figcaption,
+  .bsb-overlay-hover:focus figcaption {
+    opacity: 1;
+  }
+  
+  /* Hover effect for mobile devices: always visible */
+  @media (max-width: 767.98px) {
+    .bsb-overlay-hover figcaption {
+      opacity: 1; /* Always visible */
+    }
+  }
+  
+  /* Animations */
+  .bsb-hover-fadeInLeft {
+    animation: fadeInLeft 0.3s ease forwards;
+  }
+  
+  .bsb-hover-fadeInRight {
+    animation: fadeInRight 0.3s ease forwards;
+  }
+  
+  .bsb-hover-fadeInUp {
+    animation: fadeInUp 0.3s ease forwards;
+  }
+  
+  .bsb-hover-fadeInDown {
+    animation: fadeInDown 0.3s ease forwards;
+  }
+  
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Media Queries */
+  @media (max-width: 767.98px) {
+    .bsb-project-1-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem; /* Adjust as needed */
+    }
+  
+    .bsb-project-1-item {
+      flex: 1 0 calc(50% - 1rem); /* 2 items per row with gap */
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .bsb-project-1-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* 4 columns on larger screens */
+      gap: 1rem; /* Adjust as needed */
+    }
+  }
+  
+
+  
