@@ -149,7 +149,7 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(255, 253, 253, 0.5);
+  background-color: rgba(226, 223, 223, 0.5);
   color: black;
   padding: 10px;
   cursor: pointer;
@@ -157,12 +157,12 @@ body {
 }
 
 .prev-btn {
-  left: 0;
+  left: 15px;
   border-radius: 0 5px 5px 0;
 }
 
 .next-btn {
-  right: 0;
+  right: 15px;
   border-radius: 5px 0 0 5px;
 }
 
@@ -185,7 +185,7 @@ body {
 
   .col-6 {
     flex: 1 0 50%; /* Each card takes 50% of the width */
-    max-width: 80%; /* Ensure cards do not exceed 50% width */
+    max-width: 50%; /* Ensure cards do not exceed 50% width */
   }
 
   .slider-btn {
@@ -195,9 +195,8 @@ body {
 
 .berita {
   flex: 1;
-  margin: 0;
+  margin: 0 15px 20px; /* Margin for spacing between cards */
   background-color: #f0f0f0;
-  margin-bottom: 28px;
   border-radius: 8px;
 }
 
@@ -207,31 +206,30 @@ body {
 }
 
 .berita-body {
-  padding: 2rem;
+  padding: 1rem; /* Reduced padding for mobile */
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: auto; /* Adjusted height */
 }
 
 .berita-title {
-  font-size: 1.10rem;
-  margin-bottom: 8px; /* Reduced margin */
+  font-size: 1rem; /* Adjust font size for mobile */
+  margin-bottom: 6px; /* Reduced margin */
   font-weight: bolder;
 }
 
 .berita-text {
-  margin-bottom: 8px;
-  font-size: 15px;
+  margin-bottom: 6px; /* Reduced margin */
+  font-size: 0.875rem; /* Adjust font size for mobile */
 }
 
 .berita-btn-container {
   margin-top: auto;
   display: flex;
-  padding: 5px; /* Reduced padding */
+  padding: 4px; /* Reduced padding */
   padding-bottom: 0.5rem;
 }
 
 .berita-btn {
   margin-top: auto;
 }
-
