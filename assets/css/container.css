@@ -32,9 +32,18 @@
         margin-bottom: 3rem;
     }
 }
+.full-width-container {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .marquee {
   overflow: hidden;
   white-space: nowrap;
+  width: 100%;
   box-sizing: border-box;
 }
 
@@ -46,14 +55,14 @@
 
 .marquee-item {
   display: inline-block;
-  margin-right: 1rem; /* Adjust the spacing between items */
+  margin-right: 1rem;
 }
 
 .icon {
-  width: 90px; /* Adjust width as needed */
+  width: 90px;
   height: auto; /* Maintain aspect ratio */
   display: block;
-  margin: 0 auto; /* Center the icon if needed */
+  margin: 0 auto;
 }
 
 @keyframes marquee {
@@ -64,6 +73,7 @@
     transform: translateX(-100%);
   }
 }
+
 
 
   
@@ -77,7 +87,10 @@
 
 
 
-  /* Custom styles for navbar */
+
+
+
+
 .navbar {
   padding: 0.5rem 1rem; /* Adjust padding for all screen sizes */
 }

@@ -40,8 +40,7 @@
       opacity: 1; /* Always visible */
     }
   }
-  
-  /* Animations */
+
   .bsb-hover-fadeInLeft {
     animation: fadeInLeft 0.3s ease forwards;
   }

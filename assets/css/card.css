@@ -117,47 +117,6 @@ body {
 .text-uppercase {
   font-size: 0.8rem;
 }
-/* Default styles (for larger screens) */
-.berita {
-  flex: 1;
-  margin: 10px;
-  background-color: #f0f0f0;
-  border-radius: 8px;
-}
-
-.berita-img-top {
-  width: 100%;
-  height: auto;
-}
-
-.berita-body {
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-.berita-title {
-  font-size: 1.25rem;
-  margin-bottom: 10px;
-}
-
-.berita-text {
-  margin-bottom: 10px;
-}
-
-.berita-btn-container {
-  margin-top: auto;
-  display: flex;
-  padding: 10px;
-  padding-bottom: 0.5rem;
-}
-
-.berita-btn {
-  margin-top: auto;
-}
-
-
 .slider-container {
   position: relative;
   width: 100%;
@@ -179,20 +138,100 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(110, 104, 104, 0.5);
   color: white;
   border: none;
   padding: 10px;
   cursor: pointer;
   z-index: 2;
 }
+:hover.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 253, 253, 0.5);
+  color: black;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 2;
+}
 
 .prev-btn {
-  left: 10px;
+  left: 0;
   border-radius: 0 5px 5px 0;
 }
 
 .next-btn {
-  right: 10px;
+  right: 0;
   border-radius: 5px 0 0 5px;
 }
+
+@media (max-width: 767px) {
+  .slider-container {
+    overflow: visible; /* Allow full width display */
+  }
+
+  .slider {
+    display: block; /* Ensure it is displayed as a block */
+    flex-direction: row; /* Align items horizontally */
+    transition: none; /* Remove transition effects for non-slider view */
+  }
+
+  .slide {
+    display: flex;
+    flex-wrap: wrap; /* Wrap cards onto new lines */
+    min-width: auto; /* Ensure slides take full width */
+  }
+
+  .col-6 {
+    flex: 1 0 50%; /* Each card takes 50% of the width */
+    max-width: 80%; /* Ensure cards do not exceed 50% width */
+  }
+
+  .slider-btn {
+    display: none; /* Hide navigation buttons */
+  }
+}
+
+.berita {
+  flex: 1;
+  margin: 0;
+  background-color: #f0f0f0;
+  margin-bottom: 28px;
+  border-radius: 8px;
+}
+
+.berita-img-top {
+  width: 100%;
+  height: auto;
+}
+
+.berita-body {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.berita-title {
+  font-size: 1.10rem;
+  margin-bottom: 8px; /* Reduced margin */
+  font-weight: bolder;
+}
+
+.berita-text {
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+.berita-btn-container {
+  margin-top: auto;
+  display: flex;
+  padding: 5px; /* Reduced padding */
+  padding-bottom: 0.5rem;
+}
+
+.berita-btn {
+  margin-top: auto;
+}
+
