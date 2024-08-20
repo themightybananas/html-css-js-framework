@@ -1,3 +1,18 @@
+.background-image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh; /* Ensures the background covers the height of the viewport */
+  width: 100vw; /* Ensures the column spans the full viewport width */
+}
+
+/* Ensure no padding/margin is causing overflow */
+.no-overflow {
+  padding: 0;
+  margin: 0;
+}
+
+
 .bsb-project-1-item {
     position: relative;
     overflow: hidden;

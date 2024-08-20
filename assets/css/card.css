@@ -157,16 +157,20 @@ body {
 }
 
 .prev-btn {
-  left: 15px;
+  left: 8px;
   border-radius: 0 5px 5px 0;
 }
 
 .next-btn {
-  right: 15px;
+  right: 8px;
   border-radius: 5px 0 0 5px;
 }
 
 @media (max-width: 767px) {
+  .berita {
+    flex: 1 1 45%; /* Make the card wider on smaller screens */
+    margin: 0 5px 15px; /* Reduce the gap between cards */
+  }
   .slider-container {
     overflow: visible; /* Allow full width display */
   }
@@ -192,13 +196,19 @@ body {
     display: none; /* Hide navigation buttons */
   }
 }
-
+@media (min-width: 200px) {
+  .berita {
+    flex: 1 1 100%; /* Make each card full-width on very small screens */
+    margin: 0 90px 10px; /* Minimal gap on very small screens */
+  }
+}
 .berita {
-  flex: 1;
-  margin: 0 15px 20px; /* Margin for spacing between cards */
+  flex: 1 1 30%;
+  margin: 0 8px 20px;
   background-color: #f0f0f0;
   border-radius: 8px;
 }
+
 
 .berita-img-top {
   width: 100%;
