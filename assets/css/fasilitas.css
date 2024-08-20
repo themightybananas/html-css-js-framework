@@ -20,9 +20,15 @@
   border-radius:10px 10px 0 0;
 	border-bottom: 5px solid #104d53;
 	padding: 15px;
-  background-color: #94fce7;
+  background-color: #CBE2B5;
   }
   
+  .sarana{
+    padding: 10px;
+    background-color: #96CEB4;
+}
+
+
   .section-icon {
 	color: #0B60B0;
   }
