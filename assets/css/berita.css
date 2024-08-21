@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=New+Amsterdam&display=swap');
+
+.no-overflow {
+    overflow: hidden;
+  }
+.hero-text{
+    font-family: "DM Serif Text", serif;
+    font-style: normal;
+    color: black;
+    transform: translateY(-60px); /* Moves text 50px down */
+}

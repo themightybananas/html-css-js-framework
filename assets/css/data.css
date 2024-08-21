@@ -1,4 +1,10 @@
-.custom-container {
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Text:ital@0;1&family=New+Amsterdam&family=Oswald:wght@200..700&display=swap');
+  .profil-sekolah{
+	font-family: "Oswald", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+  }
+  .custom-container {
 	background-color: #ffffff; 
   }
   
