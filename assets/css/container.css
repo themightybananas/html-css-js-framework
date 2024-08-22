@@ -45,15 +45,17 @@
   white-space: nowrap;
   width: 100%;
   box-sizing: border-box;
+  position: relative;
 }
 
 .marquee-content {
-  display: inline-block;
-  padding-left: 100%;
+  display: flex; /* Allows multiple items to stretch horizontally */
+  min-width: 100%; /* Ensures content starts full-width */
   animation: marquee 20s linear infinite;
 }
 
 .marquee-item {
+  flex: none;
   display: inline-block;
   margin-right: 1rem;
 }
@@ -67,11 +69,15 @@
 
 @keyframes marquee {
   from {
-    transform: translateX(0);
+    transform: translateX(100%); /* Starts fully off-screen */
   }
   to {
-    transform: translateX(-100%);
+    transform: translateX(-100%); /* Ends when it's completely off-screen to the left */
   }
+}
+
+.container-fluid {
+  padding: 0; /* Remove padding for full-width effect */
 }
 
 
