@@ -22,3 +22,30 @@
     width: 100px;
     height: 100px;
 }
+.custom-list {
+	padding-left: 0;
+	list-style: none; 
+  }
+  
+  .custom-list li {
+	position: relative; 
+	color: #ffffff;
+	padding-left: 25px; 
+	margin-bottom: 10px; 
+  }
+  
+  .custom-list li::before {
+	content: '•'; 
+	position: absolute;
+	left: 0;
+	color: #ffffff; 
+	font-size: 1.5rem; 
+	line-height: 1;
+  top: 0; 
+  }
+  
+  
+  .bi-check-circle {
+	color: #ffffff;
+	margin-right: 8px;
+  }

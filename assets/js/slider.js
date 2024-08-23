@@ -1,13 +1,11 @@
-
-
-
 document.addEventListener('DOMContentLoaded', function () {
     const slider = document.querySelector('.slider');
     const slides = document.querySelectorAll('.slide');
     const prevBtn = document.querySelector('.prev-btn');
     const nextBtn = document.querySelector('.next-btn');
     let currentIndex = 0;
-    const totalSlides = slides.length;
+    const totalSlides = Math.min(slides.length, 2);
+
 
     function updateSliderPosition() {
         if (window.innerWidth >= 768) {
