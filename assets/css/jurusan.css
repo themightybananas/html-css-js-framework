@@ -51,6 +51,6 @@
   }
   .fixed-size-img {
     width: 250px;  /* Fixed width */
-    height: 200px; /* Fixed height */
+    height: 250px; /* Fixed height */
     object-fit: cover; /* Ensures the image covers the area without distortion */
   }
