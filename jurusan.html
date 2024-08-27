@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <title>SMKI</title>
+        <meta
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no"
+          name="viewport"/>
+        <!-- Fonts and icons -->
+        <link
+          href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200"
+          rel="stylesheet"/>
+        <link
+          rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+          crossorigin="anonymous"/>
+        <link rel="stylesheet" href="./assets/css/container.css" />
+        <link rel="stylesheet" href="./assets/css/jurusan.css" />
+        <script defer="" src="https://unpkg.com/vanilla-counter" onload="initializeCounterRANDOMID()"></script>
+        <script defer="" src="https://unpkg.com/vanilla-counter" onload="initializeCounterRANDOMID()" defer></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/livecanvas-team/ninjabootstrap/dist/css/bootstrap.min.css" media="all">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+      </head>
+      <body>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light py-4 px-3">
+          <div class="container-fluid px-0">
+            <a class="navbar-brand" href="../index.html">
+              <img src="./assets/img/smki.png" alt="SMKI Logo" width="30" />
+              <small class="text-dark navbar-text">SMK ISLAM BATU</small>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-default">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html">
+                    Beranda
+                </a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Informasi Jurusan
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li>
+                      <a class="dropdown-item" href="jurusan.html">Akutansi & Keuangan Lembaga</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="jurusan.html">Pemasaran</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="jurusan.html">Perbankan Syari'ah</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="jurusan.html">Teknik Komputer & Jaringan</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="jurusan.html">Pengembangan Perangkat Lunak & Gim</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="jurusan.html">Desain Komunikasi Visual</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Berita
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                    <li>
+                      <a class="dropdown-item" href="berita.html">Prestasi</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="berita.html">Kegiatan Sekolah</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="berita.html">Kegiatan Organisasi</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="berita.html">Ekstrakulikuler</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button"data-bs-toggle="dropdown" aria-expanded="false">
+                    Fasilitas
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                    <li>
+                      <a class="dropdown-item" href="sarana.html">Sarana</a>
+                    </li>
+                    <li><a class="dropdown-item" href="fasilitas.html">Prasarana</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Layanan
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown4">
+                    <li><a class="dropdown-item" href="#">SIAKAD</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Penelusuran Alumni</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">TEFA Kami</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Ruang Praktek Siswa</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Kerjasama DUDI</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown5" role="button"data-bs-toggle="dropdown" aria-expanded="false">
+                    Pendaftaran Siswa Baru
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown5">
+                    <li><a class="dropdown-item" href="#">Daftar</a></li>
+                    <li><a class="dropdown-item" href="#">Cek Nama Kamu</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="d-flex justify-content-end w-100">
+                <div class="d-flex align-items-center">
+                  <a href="#" class="btn btn-outline-primary shadow-sm me-2">Sign In</a>
+                  <a href="#" class="btn btn-primary d-none d-md-block">Sign Up</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+
+    
+
+
+
+
+  
+
+   <!-- HEADER -->
+   <div class="container-fluid py-5 d-flex justify-content-center bg-custom ">
+    <div class="p-5 mb-4 lc-block col-xxl-7 col-lg-8 col-12 custom-backdrop">
+      <div class="lc-block">
+        <div editable="rich">
+          <h2 class="fw-bolder display-3">Custom jumbotron</h2>
+        </div>
+      </div>
+      <div class="lc-block col-md-8">
+        <div editable="rich">
+          <p class="lead">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!--INFO-->
+<div class="bg-dark p-5">
+<div class="container bg-dark">
+  <div class="row align-items-center">
+      <div class="col-xl-6">
+          <div class="lc-block mb-3">
+              <div editable="rich">
+                  <h2 class="fw-bold display-5 text-warning">Informasi Jurusan</h2>
+              </div>
+          </div>
+          <div class="lc-block text-white">
+              <div editable="rich">
+                  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et metus id ligula malesuada
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et metus id ligula
+                    malesuadaLorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et metus id ligula
+                    malesuadaplacerat sit amet quis enim. Aliquam erat volutpat. In pellentesque scelerisque auctor. Ut porta lacus eget nisi fermentum lobortis.</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-xl-6 row row-cols-1 row-cols-md-2 g-3 counter-RANDOM">
+        <div class="col-6 col-md-0 col-xl-0">
+            <div class="card card-body shadow border-0">
+                <div class="d-flex flex-column align-items-center" style="min-height:196px">
+                    <div class="mb-3 pt-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="3em" height="3em" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M4,2A1,1 0 0,0 3,3V4A1,1 0 0,0 4,5H5V14H11V16.59L6.79,20.79L8.21,22.21L11,19.41V22H13V19.41L15.79,22.21L17.21,20.79L13,16.59V14H19V5H20A1,1 0 0,0 21,4V3A1,1 0 0,0 20,2H4Z"></path>
+                        </svg>
+                    </div>
+                    <div class="text-center">
+                        <span class="fw-bold display-6 mb-3" data-vanilla-counter="" data-start-at="0" data-end-at="125" data-time="1000" data-delay="60" data-format="{}"> </span>
+                        <p class="lead"><strong>Projects</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-md-0 col-xl-0">
+            <div class="card card-body shadow border-0">
+                <div class="d-flex flex-column align-items-center" style="min-height:196px">
+                    <div class="mb-3 pt-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="3em" height="3em" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M16 17V19H2V17S2 13 9 13 16 17 16 17M12.5 7.5A3.5 3.5 0 1 0 9 11A3.5 3.5 0 0 0 12.5 7.5M15.94 13A5.32 5.32 0 0 1 18 17V19H22V17S22 13.37 15.94 13M15 4A3.39 3.39 0 0 0 13.07 4.59A5 5 0 0 1 13.07 10.41A3.39 3.39 0 0 0 15 11A3.5 3.5 0 0 0 15 4Z"></path>
+                        </svg>
+                    </div>
+                    <div class="text-center">
+                        <span class="fw-bold display-6 mb-3" data-vanilla-counter="" data-start-at="0" data-end-at="53" data-time="1000" data-delay="60" data-format="{}"> </span>
+                        <p class="lead"><strong>Customers</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-md-0 col-xl-0">
+            <div class="card card-body shadow border-0">
+                <div class="d-flex flex-column align-items-center" style="min-height:196px">
+                    <div class="mb-3 pt-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="3em" height="3em" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12,10A3.5,3.5 0 0,0 15.5,6.5A3.5,3.5 0 0,0 12,3A3.5,3.5 0 0,0 8.5,6.5A3.5,3.5 0 0,0 12,10M12,5A1.5,1.5 0 0,1 13.5,6.5A1.5,1.5 0 0,1 12,8A1.5,1.5 0 0,1 10.5,6.5A1.5,1.5 0 0,1 12,5M15,20A1,1 0 0,0 14,19H13V17H19V15.5C19,13.57 15.87,12 12,12C8.13,12 5,13.57 5,15.5V17H11V19H10A1,1 0 0,0 9,20H2V22H9A1,1 0 0,0 10,23H14A1,1 0 0,0 15,22H22V20H15M7.61,15C8.39,14.53 9.89,14 12,14C14.11,14 15.61,14.53 16.39,15H7.61Z"></path>
+                        </svg>
+                    </div>
+                    <div class="text-center">
+                        <span class="fw-bold display-6 mb-3" data-vanilla-counter="" data-start-at="0" data-end-at="250" data-time="1000" data-delay="60" data-format="{}"> </span>
+                        <p class="lead"><strong>Employees</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-md-0 col-xl-0">
+            <div class="card card-body shadow border-0">
+                <div class="d-flex flex-column align-items-center" style="min-height:196px">
+                    <div class="mb-3 pt-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="3em" height="3em" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M5,3V21H11V17.5H13V21H19V3H5M7,5H9V7H7V5M11,5H13V7H11V5M15,5H17V7H15V5M7,9H9V11H7V9M11,9H13V11H11V9M15,9H17V11H15V9M7,13H9V15H7V13M11,13H13V15H11V13M15,13H17V15H15V13M7,17H9V19H7V17M15,17H17V19H15V17Z"></path>
+                        </svg>
+                    </div>
+                    <div class="text-center">
+                        <span class="fw-bold display-6 mb-3" data-vanilla-counter="" data-start-at="4800" data-end-at="5000" data-time="1000" data-delay="0" data-format="{}"> </span>
+                        <p class="lead"><strong>Branches</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--MORE INFO-->
+<div class="bg-dark shadow">
+  <div class="row row-cols-1 row-cols-lg-2 g-0 overflow-hidden p-5 text-white">
+    <div class="col">
+      <div class="lc-block p-4">
+        <div class="d-flex align-items-center mb-4">
+          <!-- SVG Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" fill="currentColor" class="bi bi-check-all me-3" viewBox="0 0 16 16">
+            <path d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486z"/>
+          </svg>
+          <!-- Heading -->
+          <h1 class="fw-bold text-warning mb-0">Peluang Kerja</h1>
+        </div>
+        <p class="fw-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut eligendi ut incidunt
+           commodi blanditiis doloribus at fugiat sequi velit maiores quod tempore, suscipit nemo totam, eveniet cum, esse consectetur repellendus.</p>
+        <ul class="list-unstyled custom-list">
+          <li class="mb-2 d-flex align-items-center">
+            <i class="bi bi-check-circle me-2 text-white"></i> 
+            Mengembangkan kurikulum yang sesuai dengan kebutuhan siswa
+          </li>
+          <li class="mb-2 d-flex align-items-center">
+            <i class="bi bi-check-circle me-2 text-white"></i> 
+            Meningkatkan kemampuan guru dalam mengajar
+          </li>
+          <li class="mb-2 d-flex align-items-center">
+            <i class="bi bi-check-circle me-2 text-white"></i> 
+            Mengembangkan fasilitas sekolah yang memadai
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col">
+      <div class="lc-block p-4">
+        <div class="d-flex align-items-center mb-4">
+          <!-- SVG Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="me-3" width="3em" height="3em" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M16 17V19H2V17S2 13 9 13 16 17 16 17M12.5 7.5A3.5 3.5 0 1 0 9 11A3.5 3.5 0 0 0 12.5 7.5M15.94 13A5.32 5.32 0 0 1 18 17V19H22V17S22 13.37 15.94 13M15 4A3.39 3.39 0 0 0 13.07 4.59A5 5 0 0 1 13.07 10.41A3.39 3.39 0 0 0 15 11A3.5 3.5 0 0 0 15 4Z"></path>
+          </svg>
+          <!-- Heading -->
+          <h1 class="fw-bold text-warning mb-0">Pembelajaran</h1>
+        </div>
+        <p class="fw-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut eligendi ut incidunt commodi blanditiis doloribus at fugiat sequi velit maiores quod tempore, suscipit nemo totam, eveniet cum, esse consectetur repellendus.</p>
+        <ul class="list-unstyled custom-list">
+          <li class="mb-2 d-flex align-items-center">
+            <i class="bi bi-check-circle me-2 text-white"></i> 
+            Mengembangkan kurikulum yang sesuai dengan kebutuhan siswa
+          </li>
+          <li class="mb-2 d-flex align-items-center">
+            <i class="bi bi-check-circle me-2 text-white"></i> 
+            Meningkatkan kemampuan guru dalam mengajar
+          </li>
+          <li class="mb-2 d-flex align-items-center">
+            <i class="bi bi-check-circle me-2 text-white"></i> 
+            Mengembangkan fasilitas sekolah yang memadai
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<!--GRID-->
+<div class="bg-dark p-5">
+  <div class="container position-relative mt-6 bg-danger rounded p-3">
+    <div class="lc-block position-absolute end-0 top-0 mt-xl-n6 mt-n6 d-none d-xl-block me-xl-n5">
+      <img class="ratio img-fluid" style="max-width:540px; max-height:1000px;" 
+           src="./assets/img/bg3.jpg" alt="Your Alt Text" loading="lazy">
+    </div>
+    <div class="row justify-content-xl-start justify-content-center">
+      <div class="col-12 d-block d-xl-none mt-n8 mb-4 ml-5">
+        <img class="ratio img-fluid" style="max-height:700px; object-fit:cover;" src="./assets/img/bg3.jpg" srcset="./assets/img/bg3.jpg" loading="lazy">
+      </div>
+      <div class="col-10 col-xl-4 mt-3 offset-xl-1 mb-5">
+        <div class="lc-block text-white text-center text-xl-start">
+          <div editable="rich">
+            <h1 class="fw-bolder fs-xl-2">The quick brown fox jumps over the lazy dog</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row px-1 px-xl-0 col-xl-6 offset-xl-1 text-white">
+      <div class="col-sm-6 text-center text-sm-start">
+        <div class="lc-block mb-2">
+          <svg width="2em" height="2em" viewBox="0 0 16 16" fill="white" xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+          </svg>
+        </div>
+        <div class="lc-block mb-2">
+          <div editable="rich">
+            <h3 class="fs-4">Speed</h3>
+          </div>
+        </div>
+        <div class="lc-block">
+          <div editable="rich">
+            <p class="lead text-white fs-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et metus id ligula malesuada.</p>
+          </div>
+        </div><!-- /lc-block -->
+      </div>
+      <div class="col-sm-6 text-center text-sm-start">
+        <div class="lc-block mb-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" fill="white" viewBox="0 0 16 16" lc-helper="svg-icon">
+            <path fill-rule="evenodd" d="M14.854 4.854a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 4H3.5A2.5 2.5 0 0 0 1 6.5v8a.5.5 0 0 0 1 0v-8A1.5 1.5 0 0 1 3.5 5h9.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4z"></path>
+          </svg>
+        </div>
+        <div class="lc-block mb-2">
+          <div editable="rich">
+            <h3 class="fs-4">No Vendor Lock-in</h3>
+          </div>
+        </div>
+        <div class="lc-block">
+          <div editable="rich">
+            <p class="lead text-white fs-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et metus id ligula malesuada.</p>
+          </div>
+        </div><!-- /lc-block -->
+      </div>
+      <div class="col-sm-6 text-center text-sm-start">
+        <div class="lc-block mb-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" fill="white" class="bi bi-backpack-fill" viewBox="0 0 16 16">
+            <path d="M5 13v-3h4v.5a.5.5 0 0 0 1 0V10h1v3z"/>
+            <path d="M6 2v.341C3.67 3.165 2 5.388 2 8v5.5A2.5 2.5 0 0 0 4.5 16h7a2.5 2.5 0 0 0 2.5-2.5V8a6 6 0 0 0-4-5.659V2a2 2 0 1 0-4 0m2-1a1 1 0 0 1 1 1v.083a6 6 0 0 0-2 0V2a1 1 0 0 1 1-1m0 3a4 4 0 0 1 3.96 3.43.5.5 0 1 1-.99.14 3 3 0 0 0-5.94 0 .5.5 0 1 1-.99-.14A4 4 0 0 1 8 4M4.5 9h7a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5"/>
+          </svg>
+        </div>
+        <div class="lc-block mb-2">
+          <div editable="rich">
+            <h3 class="fs-4">Fast and Clean</h3>
+          </div>
+        </div>
+        <div class="lc-block">
+          <div editable="rich">
+            <p class="lead text-white fs-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et metus id ligula malesuada.</p>
+          </div>
+        </div><!-- /lc-block -->
+      </div>
+      <div class="col-sm-6 text-center text-sm-start mb-5">
+        <div class="lc-block mb-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" fill="white" class="bi bi-chat-left-dots-fill" viewBox="0 0 16 16">
+            <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793zm5 4a1 1 0 1 0-2 0 1 1 0 0 0 2 0m4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+          </svg>
+        </div>
+        <div class="lc-block mb-2">
+          <div editable="rich">
+            <h3 class="fs-4">Verbose Mode</h3>
+          </div>
+        </div>
+        <div class="lc-block">
+          <div editable="rich">
+            <p class="lead text-white fs-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et metus id ligula malesuada.</p>
+          </div>
+        </div><!-- /lc-block -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--PROFILE-->
+<div class="container-fluid bg-dark p-5">
+  <div class="row row-cols-1 row-cols-lg-2 g-0 overflow-hidden mb-5">
+    <!-- Left Side: Image -->
+    <div class="col">
+      <div class="lc-block">
+        <img src="./assets/img/bg3.jpg" alt="Woman using phone" class="img-fluid" style="width: 100%; height: auto;" />
+      </div>
+    </div>
+    <div class="col d-flex align-items-center bg-light">
+      <div class="lc-block p-5">
+        <h3 class="fw-bold d-inline-block">NAMA KAJUR</h3>
+        <span class="ms-2 text-uppercase fw-bold text-nowrap bg-dark-subtle">AKL</span>
+        <p class="card-text text-primary">Ketua Jurusan</p>
+        <p class="mt-3">
+          Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap.
+          Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap.
+          Check out the examples below for how you can remix and restyle it to your liking.Check out the examples below for how you can remix and restyle it to your liking.
+        </p>
+        <ul class="social-list list-inline mb-0 mx-auto">
+          <li class="list-inline-item"><a class="text-dark" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="blue" class="bi bi-facebook mr-2" viewBox="0 0 16 16">
+              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+            </svg>
+          </i>
+        </a>
+      </li>
+          <li class="list-inline-item"><a class="text-dark" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="red" class="bi bi-instagram" viewBox="0 0 16 16">
+              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+            </svg>
+          </i>
+        </a>
+      </li>
+  </li>
+    </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container my-5 mt-6">
+    <div class="row g-4">
+      <!-- First Card -->
+      <div class="col-md-6">
+        <div class="card border-0 shadow-sm rounded-4 d-flex flex-row">
+          <img src="./assets/img/bg3.jpg" class="fixed-size-img img-fluid rounded-5 p-3 mt-n5" alt="Person">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Emma Roberts</h5>
+            <p class="card-text text-primary">UI Designer</p>
+            <p class="card-text text-muted">Artist is a term applied to a person who engages in an activity deemed to be an art.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Second Card -->
+      <div class="col-md-6">
+        <div class="card border-0 shadow-sm rounded-4 d-flex flex-row">
+          <img src="./assets/img/bg3.jpg" class="fixed-size-img img-fluid rounded-5 p-3 mt-n5" alt="Person">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">William Pearce</h5>
+            <p class="card-text text-primary">Boss</p>
+            <p class="card-text text-muted">Artist is a term applied to a person who engages in an activity deemed to be an art.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  function initializeCounterRANDOMID(){
+    
+    const options = {};
+    
+    const observer = new IntersectionObserver(function
+    (entries, observer){
+        entries.forEach(entry => {
+            console.log(entry);
+             VanillaCounter();
+        });
+    }, options);
+    
+    observer.observe(document.querySelector('.counter-RANDOM'));
+  }
+</script>
+
+
+
+
+
+
+
+      <!-- FOOTER -->
+      <footer class="pt-lg-10 pt-5 footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-12">
+              <!-- about company -->
+              <div class="mb-4 text-dark">
+                <img
+                  src="../assets/images/brand/logo/logo.svg"
+                  alt=""
+                  class="logo-inverse"
+                />
+                <div class="mt-4 text-dark">
+                  <p>
+                    Geek is feature-rich components and beautifully Bootstrap
+                    UIKit for developers, built with bootstrap responsive
+                    framework.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="offset-lg-1 col-lg-2 col-md-3 col-6">
+              <div class="mb-4">
+                <!-- list -->
+                <h3 class="fw-bold mb-3 text-dark">Company</h3>
+                <ul class="list-unstyled nav nav-footer flex-column nav-x-0">
+                  <li><a href="#" class="nav-link text-dark">About</a></li>
+                  <li><a href="#" class="nav-link text-dark">Pricing</a></li>
+                  <li><a href="#" class="nav-link text-dark">Blog</a></li>
+                  <li><a href="#" class="nav-link text-dark">Careers</a></li>
+                  <li><a href="#" class="nav-link text-dark">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-6">
+              <div class="mb-4">
+                <!-- list -->
+                <h3 class="fw-bold mb-3 text-dark">Support</h3>
+                <ul class="list-unstyled nav nav-footer flex-column nav-x-0">
+                  <li>
+                    <a href="#" class="nav-link text-dark">Help and Support</a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link text-dark">Become Instructor</a>
+                  </li>
+                  <li><a href="#" class="nav-link text-dark">Get the app</a></li>
+                  <li><a href="#" class="nav-link text-dark">FAQ’s</a></li>
+                  <li><a href="#" class="nav-link text-dark">Tutorial</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-12">
+              <!-- contact info -->
+              <div class="mb-4 text-dark">
+                <h3 class="fw-bold mb-3 text-dark">Get in touch</h3>
+                <p>339 McDermott Points Hettingerhaven, NV 15283</p>
+                <p class="mb-1">
+                  Email: <a href="#" class="text-dark">support@geeksui.com</a>
+                </p>
+                <p>
+                  Phone:
+                  <span class="text-dark fw-semibold">(000) 123 456 789</span>
+                </p>
+                <div class="d-flex">
+                  <a href="#"
+                    ><img
+                      src="../assets/images/svg/appstore.svg"
+                      alt=""
+                      class="img-fluid"
+                  /></a>
+                  <a href="#" class="ms-2"
+                    ><img
+                      src="../assets/images/svg/playstore.svg"
+                      alt=""
+                      class="img-fluid"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row align-items-center g-0 border-top py-2 mt-6">
+            <!-- Desc -->
+            <div class="col-md-10 col-12 text-dark">
+              <div class="d-lg-flex align-items-center">
+                <div class="me-4">
+                  <span
+                    >©
+                    <span id="copyright5">
+                      <script>
+                        document
+                          .getElementById("copyright5")
+                          .appendChild(
+                            document.createTextNode(new Date().getFullYear())
+                          );
+                      </script>
+                    </span>
+                    Geeks-UI</span
+                  >
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </body>
+  </html>
+
+
+
+
+
+
+
+
+
+

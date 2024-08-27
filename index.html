@@ -1,361 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>SMKI</title>
-    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+    <meta
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no"
+      name="viewport"
+    />
     <!-- Fonts and icons -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet"/>
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"/>
     <!-- CSS Files -->
-    <link rel="stylesheet" href="./assets/css/container.css">
-    <link rel="stylesheet" href="./assets/css/card.css">
-    <link rel="stylesheet" href="./assets/css/data.css">
-    <link rel="stylesheet" href="./assets/css/contact.css">
+    <link rel="stylesheet" href="./assets/css/container.css" />
+    <link rel="stylesheet" href="./assets/css/card.css" />
+    <link rel="stylesheet" href="./assets/css/data.css" />
+    <link rel="stylesheet" href="./assets/css/contact.css" />
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
     <!-- CSS Just for demo purpose, don't include it in your project -->
-    <link rel="stylesheet" href="style.css"> <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Link to the external CSS file -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</head>
-<body>
-
-  
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg pb-3 pt-3">
-  <div class="container-fluid px-0">
-    <a class="navbar-brand" href="../index.html">
-      <img src="./assets/img/smki.png" alt="SMKI Logo" width="40" />
-      <small class="text-dark navbar-text">SMK ISLAM BATU</small>
-    </a>
-    <button
-      class="navbar-toggler collapsed"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbar-default"
-      aria-controls="navbar-default"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="icon-bar top-bar mt-0"></span>
-      <span class="icon-bar middle-bar"></span>
-      <span class="icon-bar bottom-bar"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbar-default">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown mr-5">
-          <a
-            class="nav-link dropdown-toggle"
-            href="#"
-            id="navbarDropdown"
-            data-bs-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-            data-bs-display="static"
-          >
-            Dropdown
-          </a>
-          <ul class="dropdown-menu dropdown-menu-arrow" aria-labelledby="navbarDropdown">
-            <li class="dropdown-submenu dropend">
-              <ul class="dropdown-menu">
+    <script src="https://unpkg.com/swipejs@2.2.14/dist/swipe.min.js"></script>
+    <script src="./assets/js/slider.js" defer></script>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-4 px-3">
+      <div class="container-fluid px-0">
+        <a class="navbar-brand" href="../index.html">
+          <img src="./assets/img/smki.png" alt="SMKI Logo" width="40" />
+          <small class="text-dark navbar-text">SMK ISLAM BATU</small>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-default">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">
+                Beranda
+            </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Informasi Jurusan
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
-                  <a class="dropdown-item" href="../pages/course-category.html">Action Link</a>
+                  <a class="dropdown-item" href="jurusan.html">Akutansi & Keuangan Lembaga</a>
                 </li>
                 <li>
-                  <a href="#!" class="dropdown-item">Another Action</a>
+                  <a class="dropdown-item" href="jurusan.html">Pemasaran</a>
                 </li>
                 <li>
-                  <a href="#!" class="dropdown-item">Something else here</a>
+                  <a class="dropdown-item" href="jurusan.html">Perbankan Syari'ah</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="jurusan.html">Teknik Komputer & Jaringan</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="jurusan.html">Pengembangan Perangkat Lunak & Gim</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="jurusan.html">Desain Komunikasi Visual</a>
                 </li>
               </ul>
             </li>
-            <li>
-              <a href="#!" class="dropdown-item">Action Link</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Berita
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                <li>
+                  <a class="dropdown-item" href="berita.html">Prestasi</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="berita.html">Kegiatan Sekolah</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="berita.html">Kegiatan Organisasi</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="berita.html">Ekstrakulikuler</a>
+                </li>
+              </ul>
             </li>
-            <li>
-              <a href="#!" class="dropdown-item">Another Action</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button"data-bs-toggle="dropdown" aria-expanded="false">
+                Fasilitas
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                <li>
+                  <a class="dropdown-item" href="sarana.html">Sarana</a>
+                </li>
+                <li><a class="dropdown-item" href="fasilitas.html">Prasarana</a></li>
+              </ul>
             </li>
-            <li>
-              <a href="#!" class="dropdown-item">Something else here</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Layanan
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown4">
+                <li><a class="dropdown-item" href="#">SIAKAD</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Penelusuran Alumni</a>
+                </li>
+                <li><a class="dropdown-item" href="#">TEFA Kami</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Ruang Praktek Siswa</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Kerjasama DUDI</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown5" role="button"data-bs-toggle="dropdown" aria-expanded="false">
+                Pendaftaran Siswa Baru
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown5">
+                <li><a class="dropdown-item" href="#">Daftar</a></li>
+                <li><a class="dropdown-item" href="#">Cek Nama Kamu</a></li>
+              </ul>
             </li>
           </ul>
-        </li>
-      </ul>
-      <div class="d-flex justify-content-end w-100">
-        <div class="d-flex align-items-center">
-          <a href="#" class="btn btn-outline-primary shadow-sm me-2 mr-2">Sign In</a>
-          <a href="#" class="btn btn-primary d-none d-md-block">Sign Up</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</nav>
-
-
-
-<!-- CAROUSEL -->
-
-  <div class="bd-example carousel-half-height">
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
-        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
-        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="./assets/img/bg3.jpg" class="d-block w-100 " alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="./assets/img/bg4.jpg" class="d-block w-100 " alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="./assets/img/bg5.jpg" class="d-block w-100 " alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h3>Third slide label</h3>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+          <div class="d-flex justify-content-end w-100">
+            <div class="d-flex align-items-center">
+              <a href="#" class="btn btn-outline-primary shadow-sm mr-2">Sign In</a>
+              <a href="#" class="btn btn-primary d-none d-md-block">Sign Up</a>
+            </div>
           </div>
         </div>
       </div>
-      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      </a>
-    </div>
-  </div>     
+    </nav>
+    
 
 
 
 
-<!-- BERITA -->
-<section class="pt-2 pb-5 mb-3 ml-1 mr-1">
-  <div class="container-fluid px-0">
-    <div class="row no-gutters">
-      <div class="col-sm-12">
-        <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+
+
+    <!-- CAROUSEL -->
+    <div class="bd-example  ">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <ol class="carousel-indicators">
+              <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+              <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+              <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+          </ol>
           <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="cards">
-                <div class="col-sm-2 p-0">
-                  <div class="card-item">
-                    <a href="" class="card">
-                      <img src="./assets/img/bg4.jpg" alt="" />
-                      <div class="card__overlay">
-                        <div class="card__header">
-                          <img class="card__thumb" src="https://i.imgur.com/7D7I6dI.png" alt="" />
-                          <div class="card__header-text ml-2">
-                            <h3 class="card__title">Special title treatment</h3>
-                          </div>
-                        </div>
-                        <p class="card__description">With supporting text below as a natural lead-in to additional content.</p>
-                      </div>
-                    </a>
+              <div class="carousel-item active position-relative">
+                  <img src="./assets/img/bg3.jpg" class="d-block w-100" alt="..." />
+                  <div class="carousel-caption d-none d-md-block txt-carousel">
+                      <h3 class="font-weight-bolder">First slide label</h3>
+                      <p class="font-weight-bold">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                   </div>
-                </div>
-                <div class="col-sm-2 p-0">
-                  <div class="card-item">
-                    <a href="" class="card">
-                      <img src="./assets/img/bg4.jpg" alt="" />
-                      <div class="card__overlay">
-                        <div class="card__header">
-                          <img class="card__thumb" src="https://i.imgur.com/7D7I6dI.png" alt="" />
-                          <div class="card__header-text ml-2">
-                            <h3 class="card__title">Special title treatment</h3>
-                          </div>
-                        </div>
-                        <p class="card__description">With supporting text below as a natural lead-in to additional content.</p>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="col-sm-2 p-0">
-                  <div class="card-item">
-                    <a href="" class="card">
-                      <img src="./assets/img/bg4.jpg" alt="" />
-                      <div class="card__overlay">
-                        <div class="card__header">
-                          <img class="card__thumb" src="https://i.imgur.com/7D7I6dI.png" alt="" />
-                          <div class="card__header-text ml-2">
-                            <h3 class="card__title">Special title treatment</h3>
-                          </div>
-                        </div>
-                        <p class="card__description">With supporting text below as a natural lead-in to additional content.</p>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="col-sm-2 p-0">
-                  <div class="card-item">
-                    <a href="" class="card">
-                      <img src="./assets/img/bg5.jpg" alt="" />
-                      <div class="card__overlay">
-                        <div class="card__header">
-                          <img class="card__thumb" src="https://i.imgur.com/7D7I6dI.png" alt="" />
-                          <div class="card__header-text ml-2">
-                            <h3 class="card__title">Another title treatment</h3>
-                          </div>
-                        </div>
-                        <p class="card__description">With supporting text below as a natural lead-in to additional content.</p>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="col-sm-2 p-0">
-                  <div class="card-item">
-                    <a href="" class="card">
-                      <img src="./assets/img/bg4.jpg" alt="" />
-                      <div class="card__overlay">
-                        <div class="card__header">
-                          <img class="card__thumb" src="https://i.imgur.com/7D7I6dI.png" alt="" />
-                          <div class="card__header-text ml-2">
-                            <h3 class="card__title">Another title treatment</h3>
-                          </div>
-                        </div>
-                        <p class="card__description">With supporting text below as a natural lead-in to additional content.</p>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="col-sm-2 p-0">
-                  <div class="card-item">
-                    <a href="" class="card">
-                      <img src="./assets/img/bg4.jpg" alt="" />
-                      <div class="card__overlay">
-                        <div class="card__header">
-                          <img class="card__thumb" src="https://i.imgur.com/7D7I6dI.png" alt="" />
-                          <div class="card__header-text ml-2">
-                            <h3 class="card__title">Another title treatment</h3>
-                          </div>
-                        </div>
-                        <p class="card__description">With supporting text below as a natural lead-in to additional content.</p>
-                      </div>
-                    </a>
-                  </div>
-                </div>
               </div>
-            </div>
-            <div class="carousel-item">
-              <div class="cards">
-                <div class="col-sm-2 p-0">
-                  <div class="card-item">
-                    <a href="" class="card">
-                      <img src="./assets/img/bg5.jpg" alt="" />
-                      <div class="card__overlay">
-                        <div class="card__header">
-                          <img class="card__thumb" src="https://i.imgur.com/7D7I6dI.png" alt="" />
-                          <div class="card__header-text ml-2">
-                            <h3 class="card__title">Another title treatment</h3>
-                          </div>
-                        </div>
-                        <p class="card__description">With supporting text below as a natural lead-in to additional content.</p>
-                      </div>
-                    </a>
+              <div class="carousel-item position-relative">
+                  <img src="./assets/img/bg4.jpg" class="d-block w-100" alt="..." />
+                  <div class="carousel-caption d-none d-md-block txt-carousel">
+                      <h3 class="font-weight-bolder">Second slide label</h3>
+                      <p class="font-weight-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                   </div>
-                </div>
-                <div class="col-sm-2 p-0">
-                  <div class="card-item">
-                    <a href="" class="card">
-                      <img src="./assets/img/bg4.jpg" alt="" />
-                      <div class="card__overlay">
-                        <div class="card__header">
-                          <img class="card__thumb" src="https://i.imgur.com/7D7I6dI.png" alt="" />
-                          <div class="card__header-text ml-2">
-                            <h3 class="card__title">Another title treatment</h3>
-                          </div>
-                        </div>
-                        <p class="card__description">With supporting text below as a natural lead-in to additional content.</p>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="col-sm-2 p-0">
-                  <div class="card-item">
-                    <a href="" class="card">
-                      <img src="./assets/img/bg4.jpg" alt="" />
-                      <div class="card__overlay">
-                        <div class="card__header">
-                          <img class="card__thumb" src="https://i.imgur.com/7D7I6dI.png" alt="" />
-                          <div class="card__header-text ml-2">
-                            <h3 class="card__title">Another title treatment</h3>
-                          </div>
-                        </div>
-                        <p class="card__description">With supporting text below as a natural lead-in to additional content.</p>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="col-sm-2 p-0">
-                  <div class="card-item">
-                    <a href="" class="card">
-                      <img src="./assets/img/bg5.jpg" alt="" />
-                      <div class="card__overlay">
-                        <div class="card__header">
-                          <img class="card__thumb" src="https://i.imgur.com/7D7I6dI.png" alt="" />
-                          <div class="card__header-text ml-2">
-                            <h3 class="card__title">Another title treatment</h3>
-                          </div>
-                        </div>
-                        <p class="card__description">With supporting text below as a natural lead-in to additional content.</p>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="col-sm-2 p-0">
-                  <div class="card-item">
-                    <a href="" class="card">
-                      <img src="./assets/img/bg4.jpg" alt="" />
-                      <div class="card__overlay">
-                        <div class="card__header">
-                          <img class="card__thumb" src="https://i.imgur.com/7D7I6dI.png" alt="" />
-                          <div class="card__header-text ml-2">
-                            <h3 class="card__title">Another title treatment</h3>
-                          </div>
-                        </div>
-                        <p class="card__description">With supporting text below as a natural lead-in to additional content.</p>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="col-sm-2 p-0">
-                  <div class="card-item">
-                    <a href="" class="card">
-                      <img src="./assets/img/bg4.jpg" alt="" />
-                      <div class="card__overlay">
-                        <div class="card__header">
-                          <img class="card__thumb" src="https://i.imgur.com/7D7I6dI.png" alt="" />
-                          <div class="card__header-text ml-2">
-                            <h3 class="card__title">Another title treatment</h3>
-                          </div>
-                        </div>
-                        <p class="card__description">With supporting text below as a natural lead-in to additional content.</p>
-                      </div>
-                    </a>
-                  </div>
-                </div>
               </div>
-            </div>
+              <div class="carousel-item position-relative">
+                  <img src="./assets/img/bg5.jpg" class="d-block w-100" alt="..." />
+                  <div class="carousel-caption d-none d-md-block txt-carousel">
+                      <h3 class="font-weight-bolder">Third slide label</h3>
+                      <p class="font-weight-bold">Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                  </div>
+              </div>
           </div>
-        </div>
+          <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </a>
       </div>
-    </div>
   </div>
-</section>
 
 
 
@@ -368,80 +191,178 @@
 
 
 
-<!-- PROFIL SEKOLAH -->
-  <div class="container py-4 py-lg-6">
-    <div class="row align-items-center">
-        <div class="col-lg-6 mb-5 mb-lg-0">
-            <div class="lc-block px-4">
-                <!--  If you want to remove px-4 please add overflow-hidden class to the section -->
-                <div class="position-relative">
-                    <img class="position-relative img-fluid" src="./assets/img/bg4.jpg">
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-6 ">
-            <div class="lc-block mb-4">
-                <div editable="rich">
-                    <h2 class="fw-bold display-5 text-dark">PROFIL SEKOLAH</h2>
-                </div>
-            </div>
-            <div class="lc-block mb-5">
-                <div editable="rich">
-                    <p class="lead text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a lacus est. Etiam diam metus, lobortis non augue at, placerat viverra risus. Cras ornare faucibus laoreet.</p>
-                </div>
-            </div>
-            <div class="lc-block d-sm-flex align-items-center mb-4 overflow-hidden position-relative">
-                <div class="d-inline-flex">
-                    <div>
-                        <svg width="1.5em" height="1.5em"  viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon" class="text-success">
-                            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
-                            <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"></path>
-                        </svg>
-                    </div>
-                    <div class="ms-3 align-self-center ml-2" editable="rich">
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="lc-block d-sm-flex align-items-center mb-4">
-                <div class="d-inline-flex">
-                    <div>
-                        <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon" class="text-success">
-                            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
-                            <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"></path>
-                        </svg>
-                    </div>
-                    <div class="ms-3 align-self-center ml-2" editable="rich">
-                        <p>Suspendisse a lacus est</p>
-                    </div>
-                </div>
-            </div>
-            <div class="lc-block d-sm-flex align-items-center mb-4">
-                <div class="d-inline-flex">
-                    <div>
-                        <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon" class="text-success">
-                            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
-                            <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"></path>
-                        </svg>
-                    </div>
-                    <div class="ms-3 ml-2 align-self-center" editable="rich">
-                        <p>Etiam diam metus, lobortis non augue at</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
 
-
-
-
-
-
-
-
-
+    <!-- JURUSAN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/svg-with-js.min.css" integrity="sha512-W3ZfgmZ5g1rCPFiCbOb+tn7g7sQWOQCB1AkDqrBG1Yp3iDjY9KYFh/k1AWxrt85LX5BRazEAuv+5DV2YZwghag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <section class="team-section py-5 mt-4 mx-3">
+      <div class="">
+          <div class="row justify-content-center">
+              <!-- Card 1 -->
+              <div class="col-6 col-md-4 col-lg-2">
+                  <div class="card border-0 shadow-lg pt-5 my-4 position-relative">
+                      <div class="card-body p-4">
+                          <div class="member-profile position-absolute w-100 text-center">
+                              <img class="rounded-circle mx-auto d-inline-block shadow-sm" src="https://bootdey.com/img/Content/avatar/avatar8.png" alt="">
+                          </div>
+                          <div class="card-text pt-1">
+                              <h5 class="member-name mb-0 text-center text-primary font-weight-bold">Jean Torres</h5>
+                              <div class="mb-3 text-center">Marketing</div>
+                          </div>
+                      </div><!--//card-body-->
+                      <div class="card-footer theme-bg-primary border-0 text-center">
+                          <ul class="social-list list-inline mb-0 mx-auto">
+                              <li class="list-inline-item"><a class="text-dark" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="blue" class="bi bi-facebook mr-2" viewBox="0 0 16 16">
+                                  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                                </svg></i></a></li>
+                              <li class="list-inline-item"><a class="text-dark" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="red" class="bi bi-instagram" viewBox="0 0 16 16">
+                                  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                                </svg></i></a></li>
+                          </ul><!--//social-list-->
+                      </div><!--//card-footer-->
+                  </div><!--//card-->
+              </div><!--//col-->
+    
+              <!-- Card 2 -->
+              <div class="col-6 col-md-4 col-lg-2">
+                  <div class="card border-0 shadow-lg pt-5 my-4 position-relative">
+                      <div class="card-body p-4">
+                          <div class="member-profile position-absolute w-100 text-center">
+                              <img class="rounded-circle mx-auto d-inline-block shadow-sm" src="https://bootdey.com/img/Content/avatar/avatar8.png" alt="">
+                          </div>
+                          <div class="card-text pt-1">
+                              <h5 class="member-name mb-0 text-center text-primary font-weight-bold">Jean Torres</h5>
+                              <div class="mb-3 text-center">Marketing</div>
+                          </div>
+                      </div><!--//card-body-->
+                      <div class="card-footer theme-bg-primary border-0 text-center">
+                        <ul class="social-list list-inline mb-0 mx-auto">
+                          <li class="list-inline-item"><a class="text-dark" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="blue" class="bi bi-facebook mr-2" viewBox="0 0 16 16">
+                              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                            </svg></i></a></li>
+                          <li class="list-inline-item"><a class="text-dark" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="red" class="bi bi-instagram" viewBox="0 0 16 16">
+                              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                            </svg></i></a></li>
+                      </ul><!--//social-list-->
+                      </div><!--//card-footer-->
+                  </div><!--//card-->
+              </div><!--//col-->
+    
+              <!-- Card 3 -->
+              <div class="col-6 col-md-4 col-lg-2">
+                  <div class="card border-0 shadow-lg pt-5 my-4 position-relative">
+                      <div class="card-body p-4">
+                          <div class="member-profile position-absolute w-100 text-center">
+                              <img class="rounded-circle mx-auto d-inline-block shadow-sm" src="https://bootdey.com/img/Content/avatar/avatar8.png" alt="">
+                          </div>
+                          <div class="card-text pt-1">
+                              <h5 class="member-name mb-0 text-center text-primary font-weight-bold">Jean Torres</h5>
+                              <div class="mb-3 text-center">Marketing</div>
+                          </div>
+                      </div><!--//card-body-->
+                      <div class="card-footer theme-bg-primary border-0 text-center">
+                        <ul class="social-list list-inline mb-0 mx-auto">
+                          <li class="list-inline-item"><a class="text-dark" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="blue" class="bi bi-facebook mr-2" viewBox="0 0 16 16">
+                              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                            </svg></i></a></li>
+                          <li class="list-inline-item"><a class="text-dark" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="red" class="bi bi-instagram" viewBox="0 0 16 16">
+                              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                            </svg></i></a></li>
+                      </ul><!--//social-list-->
+                      </div><!--//card-footer-->
+                  </div><!--//card-->
+              </div><!--//col-->
+    
+              <!-- Card 4 -->
+              <div class="col-6 col-md-4 col-lg-2">
+                  <div class="card border-0 shadow-lg pt-5 my-4 position-relative">
+                      <div class="card-body p-4">
+                          <div class="member-profile position-absolute w-100 text-center">
+                              <img class="rounded-circle mx-auto d-inline-block shadow-sm" src="https://bootdey.com/img/Content/avatar/avatar8.png" alt="">
+                          </div>
+                          <div class="card-text pt-1">
+                              <h5 class="member-name mb-0 text-center text-primary font-weight-bold">Jean Torres</h5>
+                              <div class="mb-3 text-center">Marketing</div>
+                          </div>
+                      </div><!--//card-body-->
+                      <div class="card-footer theme-bg-primary border-0 text-center">
+                        <ul class="social-list list-inline mb-0 mx-auto">
+                          <li class="list-inline-item"><a class="text-dark" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="blue" class="bi bi-facebook mr-2" viewBox="0 0 16 16">
+                              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                            </svg></i></a></li>
+                          <li class="list-inline-item"><a class="text-dark" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="red" class="bi bi-instagram" viewBox="0 0 16 16">
+                              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                            </svg></i></a></li>
+                      </ul><!--//social-list-->
+                      </div><!--//card-footer-->
+                  </div><!--//card-->
+              </div><!--//col-->
+    
+              <!-- Card 5 -->
+              <div class="col-6 col-md-4 col-lg-2">
+                  <div class="card border-0 shadow-lg pt-5 my-4 position-relative">
+                      <div class="card-body p-4">
+                          <div class="member-profile position-absolute w-100 text-center">
+                              <img class="rounded-circle mx-auto d-inline-block shadow-sm" src="https://bootdey.com/img/Content/avatar/avatar8.png" alt="">
+                          </div>
+                          <div class="card-text pt-1">
+                              <h5 class="member-name mb-0 text-center text-primary font-weight-bold">Jean Torres</h5>
+                              <div class="mb-3 text-center">Marketing</div>
+                          </div>
+                      </div><!--//card-body-->
+                      <div class="card-footer theme-bg-primary border-0 text-center">
+                        <ul class="social-list list-inline mb-0 mx-auto">
+                          <li class="list-inline-item"><a class="text-dark" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="blue" class="bi bi-facebook mr-2" viewBox="0 0 16 16">
+                              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                            </svg></i></a></li>
+                          <li class="list-inline-item"><a class="text-dark" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="red" class="bi bi-instagram" viewBox="0 0 16 16">
+                              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                            </svg></i></a></li>
+                      </ul><!--//social-list-->
+                      </div><!--//card-footer-->
+                  </div><!--//card-->
+              </div><!--//col-->
+    
+              <!-- Card 6 -->
+              <div class="col-6 col-md-4 col-lg-2">
+                  <div class="card border-0 shadow-lg pt-5 my-4 position-relative">
+                      <div class="card-body p-4">
+                          <div class="member-profile position-absolute w-100 text-center">
+                              <img class="rounded-circle mx-auto d-inline-block shadow-sm" src="https://bootdey.com/img/Content/avatar/avatar8.png" alt="">
+                          </div>
+                          <div class="card-text pt-1">
+                              <h5 class="member-name mb-0 text-center text-primary font-weight-bold">Jean Torres</h5>
+                              <div class="mb-3 text-center">Marketing</div>
+                          </div>
+                      </div><!--//card-body-->
+                      <div class="card-footer theme-bg-primary border-0 text-center">
+                        <ul class="social-list list-inline mb-0 mx-auto">
+                          <li class="list-inline-item"><a class="text-dark" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="blue" class="bi bi-facebook mr-2" viewBox="0 0 16 16">
+                              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                            </svg></i></a></li>
+                          <li class="list-inline-item"><a class="text-dark" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="red" class="bi bi-instagram" viewBox="0 0 16 16">
+                              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                            </svg></i></a></li>
+                      </ul><!--//social-list-->
+                      </div><!--//card-footer-->
+                  </div><!--//card-->
+              </div><!--//col-->
+          </div><!--//row-->
+      </div><!--//container-->
+    </section>
+    
   
 
 
@@ -453,238 +374,674 @@
 
 
 
-  <!-- DATA -->
-  <div class="container-fluid custom-container mb-5 mt-5 pt-5 pb-5 pl-3 pr-3">
-    <div class="row">
-      <!-- Visi Misi Section -->
-      <div class="col-md-4 mb-4">
-        <div class="section-header d-flex align-items-center mb-3">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-book-half section-icon" viewBox="0 0 16 16">
-            <path d="M8.5 2.687c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"/>
-          </svg>
-          <h2 class="display-6 fw-bold mb-0 ml-2">Visi Misi</h2>
+
+
+
+
+    <!-- PROFIL SEKOLAH -->
+    <div class="container py-4 py-lg-6">
+      <div class="row align-items-center">
+        <div class="col-lg-7 mb-5 mb-lg-0">
+          <div class="lc-block px-4">
+            <!--  If you want to remove px-4 please add overflow-hidden class to the section -->
+            <div class="position-relative">
+              <img
+                class="position-relative img-fluid"
+                src="./assets/img/bg4.jpg"/>
+            </div>
+          </div>
         </div>
-        <p class="lead fw-bold mb-4">Mengembangkan potensi siswa untuk menjadi pribadi yang beriman, berilmu, dan berbudi pekerti luhur.</p>
-        <ul class="list-unstyled custom-list">
-          <li class="mb-2"><i class="bi bi-check-circle"></i> Mengembangkan kurikulum yang sesuai dengan kebutuhan siswa</li>
-          <li class="mb-2"><i class="bi bi-check-circle"></i> Meningkatkan kemampuan guru dalam mengajar</li>
-          <li class="mb-2"><i class="bi bi-check-circle"></i> Mengembangkan fasilitas sekolah yang memadai</li>
-        </ul>
+        <div class="col-lg-5">
+          <div class="lc-block mb-4">
+            <div editable="rich">
+              <h2 class="text-dark profil-sekolah mb-4">PROFIL SEKOLAH</h2>
+            </div>
+          </div>
+          <div class="lc-block mb-5 mt-2">
+            <div editable="rich">
+              <p class="lead text-muted">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse a lacus est. Etiam diam metus, lobortis non augue
+                at, placerat viverra risus. Cras ornare faucibus laoreet.
+              </p>
+            </div>
+          </div>
+          <div
+            class="lc-block d-sm-flex align-items-center mb-4 overflow-hidden position-relative"
+          >
+            <div class="d-inline-flex">
+              <div>
+                <svg
+                  width="1.5em"
+                  height="1.5em"
+                  viewBox="0 0 16 16"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                  lc-helper="svg-icon"
+                  class="text-success"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+                  ></path>
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="ms-3 align-self-center ml-2" editable="rich">
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+              </div>
+            </div>
+          </div>
+          <div class="lc-block d-sm-flex align-items-center mb-4">
+            <div class="d-inline-flex">
+              <div>
+                <svg
+                  width="1.5em"
+                  height="1.5em"
+                  viewBox="0 0 16 16"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                  lc-helper="svg-icon"
+                  class="text-success"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+                  ></path>
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="ms-3 align-self-center ml-2" editable="rich">
+                <p>Suspendisse a lacus est</p>
+              </div>
+            </div>
+          </div>
+          <div class="lc-block d-sm-flex align-items-center mb-4">
+            <div class="d-inline-flex">
+              <div>
+                <svg
+                  width="1.5em"
+                  height="1.5em"
+                  viewBox="0 0 16 16"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                  lc-helper="svg-icon"
+                  class="text-success"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+                  ></path>
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="ms-3 ml-2 align-self-center" editable="rich">
+                <p>Etiam diam metus, lobortis non augue at</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <!-- Data Sekolah Section -->
-      <div class="col-md-4 mb-4">
-        <div class="section-header d-flex align-items-center mb-3">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-graph-up-arrow section-icon" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M0 0h1v15h15v1H0zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5"/>
-          </svg>
-          <h2 class="display-6 fw-bold mb-0 ml-2">Data Sekolah</h2>
+    </div>
+
+
+
+
+
+
+    
+
+    <!-- DATA -->
+    <div class="container-fluid custom-container mb-5 mt-5 pt-5 pb-5 pl-5 pr-5">
+      <div class="row">
+        <!-- Visi Misi Section -->
+        <div class="col-md-4 mb-4">
+          <div class="section-header d-flex align-items-center mb-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-book-half section-icon" viewBox="0 0 16 16">
+              <path d="M8.5 2.687c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"/>
+            </svg>
+            <h2 class="display-6 fw-bold mb-0 ml-3 profil-sekolah">Visi Misi</h2>
+          </div>
+          <p class="lead fw-bold mb-4">
+            Mengembangkan potensi siswa untuk menjadi pribadi yang beriman,
+            berilmu, dan berbudi pekerti luhur.
+          </p>
+          <ul class="list-unstyled custom-list">
+            <li class="mb-2">
+              <i class="bi bi-check-circle"></i> Mengembangkan kurikulum yang
+              sesuai dengan kebutuhan siswa
+            </li>
+            <li class="mb-2">
+              <i class="bi bi-check-circle"></i> Meningkatkan kemampuan guru
+              dalam mengajar
+            </li>
+            <li class="mb-2">
+              <i class="bi bi-check-circle"></i> Mengembangkan fasilitas sekolah
+              yang memadai
+            </li>
+          </ul>
         </div>
-        <p class="lead fw-bold mb-4">Pembelajaran yang menghubungkan ratusan siswa dengan keterampilan penting dan pengetahuan yang dibutuhkan untuk mencapai kesuksesan.</p>
+        <!-- Data Sekolah Section -->
+        <div class="col-md-4 mb-4">
+          <div class="section-header d-flex align-items-center mb-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-graph-up-arrow section-icon" viewBox="0 0 16 16">
+              <path
+                fill-rule="evenodd"
+                d="M0 0h1v15h15v1H0zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5"/>
+            </svg>
+            <h2 class="display-6 fw-bold mb-0 ml-3 profil-sekolah">Data Sekolah</h2>
+          </div>
+          <p class="lead fw-bold mb-5">
+            Pembelajaran yang menghubungkan ratusan siswa dengan keterampilan
+            penting dan pengetahuan yang dibutuhkan untuk mencapai kesuksesan.
+          </p>
+          <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="data-box text-center p-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-backpack data-icon" viewBox="0 0 16 16">
+                  <path d="M4.04 7.43a4 4 0 0 1 7.92 0 .5.5 0 1 1-.99.14 3 3 0 0 0-5.94 0 .5.5 0 1 1-.99-.14M4 9.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5zm1 .5v3h6v-3h-1v.5a.5.5 0 0 1-1 0V10z"/>
+                  <path d="M6 2.341V2a2 2 0 1 1 4 0v.341c2.33.824 4 3.047 4 5.659v5.5a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 2 13.5V8a6 6 0 0 1 4-5.659M7 2v.083a6 6 0 0 1 2 0V2a1 1 0 0 0-2 0m1 1a5 5 0 0 0-5 5v5.5A1.5 1.5 0 0 0 4.5 15h7a1.5 1.5 0 0 0 1.5-1.5V8a5 5 0 0 0-5-5"/>
+                </svg>
+                <h3 class="display-6 fw-bold mt-2 mb-0">752</h3>
+                <p class="text-uppercase mb-0">Siswa</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="data-box text-center p-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person-video3 data-icon" viewBox="0 0 16 16">
+                  <path d="M14 9.5a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-6 5.7c0 .8.8.8.8.8h6.4s.8 0 .8-.8-.8-3.2-4-3.2-4 2.4-4 3.2"/>
+                  <path d="M2 2a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H2m0-1h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2"/>
+                </svg>
+                <h3 class="display-6 fw-bold mt-2 mb-0">50</h3>
+                <p class="text-uppercase mb-0">Guru</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="data-box text-center p-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-buildings-fill data-icon" viewBox="0 0 16 16">
+                  <path d="M15 .5a.5.5 0 0 0-.724-.447l-8 4A.5.5 0 0 0 6 4.5v3.14L.342 9.526A.5.5 0 0 0 0 10v5.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V14h1v1.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5zM2 11h1v1H2zm2 0h1v1H4zm-1 2v1H2v-1zm1 0h1v1H4zm9-10v1h-1V3zM8 5h1v1H8zm1 2v1H8V7zM8 9h1v1H8zm2 0h1v1h-1zm-1 2v1H8v-1zm1 0h1v1h-1zm3-2v1h-1V9zm-1 2h1v1h-1zm-2-4h1v1h-1zm3 0v1h-1V7zm-2-2v1h-1V5zm1 0h1v1h-1z"/>
+                </svg>
+                <h3 class="display-6 fw-bold mt-2 mb-0">25</h3>
+                <p class="text-uppercase mb-0">Kelas</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fasilitas Section -->
+        <div class="col-md-4 mb-4">
+          <div class="section-header d-flex align-items-center mb-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-building-fill-check section-icon" viewBox="0 0 16 16">
+              <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m1.679-4.493-1.335 2.226a.75.75 0 0 1-1.174.144l-.774-.773a.5.5 0 0 1 .708-.708l.547.548 1.17-1.951a.5.5 0 1 1 .858.514"/>
+              <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v7.256A4.5 4.5 0 0 0 12.5 8a4.5 4.5 0 0 0-3.59 1.787A.5.5 0 0 0 9 9.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .39-.187A4.5 4.5 0 0 0 8.027 12H6.5a.5.5 0 0 0-.5.5V16H3a1 1 0 0 1-1-1zm2 1.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5m3 0v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5m3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM4 5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5M7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5M4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z"/>
+            </svg>
+            <h2 class="display-6 fw-bold mb-0 ml-3 profil-sekolah">Fasilitas</h2>
+          </div>
+          <p class="lead fw-bold mb-4">
+            Informasi penting terkait kegiatan dan berita terbaru sekolah.
+          </p>
+          <ul class="list-unstyled custom-list">
+            <li class="mb-2">
+              <i class="bi bi-check-circle"></i> Pengumuman terbaru
+            </li>
+            <li class="mb-2">
+              <i class="bi bi-check-circle"></i> Kegiatan mendatang
+            </li>
+            <li class="mb-2">
+              <i class="bi bi-check-circle"></i> Berita sekolah
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+        <!-- BERITA -->
+          <div class="container-fluid col-6 col-md-2 px-4 my-5 text-center bg-light shadow rounded">
+            <div class="lc-block d-flex align-items-center justify-content-center mx-auto mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="dark"><path d="M149.61-104.17q-32.68 0-55.95-23.27-23.27-23.27-23.27-55.95v-676.96l70.1 68.11 67.42-68.11 68.32 68.13 68.32-68.13 67.88 68.13 67.76-68.13 67.75 68.13 67.89-68.13 68.12 68.13 68.13-68.13 67.7 68.13 69.83-68.13v676.96q0 32.68-23.27 55.95-23.27 23.27-55.95 23.27H149.61Zm0-79.22h294.17v-280H149.61v280Zm366.61 0h294.17v-103.22H516.22v103.22Zm0-176.22h294.17v-103.78H516.22v103.78ZM149.61-536.39h660.78v-107H149.61v107Z"/></svg>
+              <h1 class="fw-bolder ms-3 ml-2">Berita</h1>
+            </div>
+          </div>        
+          <div class="d-flex flex-column mt-5 mb-5 pb-5">
+            <div class="slider-container">
+              <button class="slider-btn prev-btn d-none d-md-block">&#10094;</button>
+              <div class="slider">
+                <div class="slide">
+                  <div class="row">
+                    <!-- Adjust margin for extra small and small screens -->
+                    <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 p-1">
+                      <div class="berita mb-2 mb-sm-3"> <!-- Reduced margin on smaller screens -->
+                        <img src="./assets/img/bg4.jpg" class="berita-img-top rounded-top" alt="News Image" />
+                        <div class="berita-body shadow bg-light rounded">
+                          <h5 class="berita-title">News Title 1</h5>
+                          <p class="berita-text">
+                            This is a short description of the news content. It provides a brief overview of the main points.
+                          </p>
+                          <div class="berita-btn-container">
+                            <a href="isiberita.html" class="berita-btn">Read More</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 p-1">
+                      <div class="berita mb-2 mb-sm-3"> <!-- Reduced margin on smaller screens -->
+                        <img src="https://via.placeholder.com/300x200" class="berita-img-top rounded-top" alt="News Image" />
+                        <div class="berita-body shadow bg-light rounded">
+                          <h5 class="berita-title">News Title 2</h5>
+                          <p class="berita-text">
+                            This is a short description of the news content. It provides a brief overview of the main points.
+                          </p>
+                          <div class="berita-btn-container">
+                            <a href="isiberita.html" class="berita-btn">Read More</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 p-1">
+                      <div class="berita mb-2 mb-sm-3"> <!-- Reduced margin on smaller screens -->
+                        <img src="https://via.placeholder.com/300x200" class="berita-img-top rounded-top" alt="News Image" />
+                        <div class="berita-body shadow bg-light rounded">
+                          <h5 class="berita-title">News Title 3</h5>
+                          <p class="berita-text">
+                            This is a short description of the news content. It provides a brief overview of the main points.
+                          </p>
+                          <div class="berita-btn-container">
+                            <a href="isiberita.html" class="berita-btn">Read More</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 p-1">
+                      <div class="berita mb-2 mb-sm-3"> <!-- Reduced margin on smaller screens -->
+                        <img src="https://via.placeholder.com/300x200" class="berita-img-top rounded-top" alt="News Image" />
+                        <div class="berita-body shadow bg-light rounded">
+                          <h5 class="berita-title">News Title 4</h5>
+                          <p class="berita-text">
+                            This is a short description of the news content. It provides a brief overview of the main points.
+                          </p>
+                          <div class="berita-btn-container">
+                            <a href="isiberita.html" class="berita-btn">Read More</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="row">
+                    <!-- Repeat for more slides -->
+                    <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 p-1">
+                      <div class="berita mb-2 mb-sm-3"> <!-- Reduced margin on smaller screens -->
+                        <img src="https://via.placeholder.com/300x200" class="berita-img-top rounded-top" alt="News Image" />
+                        <div class="berita-body shadow bg-light rounded">
+                          <h5 class="berita-title">News Title 5</h5>
+                          <p class="berita-text">
+                            This is a short description of the news content. It provides a brief overview of the main points.
+                          </p>
+                          <div class="berita-btn-container">
+                            <a href="isiberita.html" class="berita-btn">Read More</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 p-1">
+                      <div class="berita mb-2 mb-sm-3"> <!-- Reduced margin on smaller screens -->
+                        <img src="https://via.placeholder.com/300x200" class="berita-img-top rounded-top" alt="News Image" />
+                        <div class="berita-body shadow bg-light rounded">
+                          <h5 class="berita-title">News Title 6</h5>
+                          <p class="berita-text">
+                            This is a short description of the news content. It provides a brief overview of the main points.
+                          </p>
+                          <div class="berita-btn-container">
+                            <a href="isiberita.html" class="berita-btn">Read More</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 p-1">
+                      <div class="berita mb-2 mb-sm-3"> <!-- Reduced margin on smaller screens -->
+                        <img src="https://via.placeholder.com/300x200" class="berita-img-top rounded-top" alt="News Image" />
+                        <div class="berita-body shadow bg-light rounded">
+                          <h5 class="berita-title">News Title 7</h5>
+                          <p class="berita-text">
+                            This is a short description of the news content. It provides a brief overview of the main points.
+                          </p>
+                          <div class="berita-btn-container">
+                            <a href="isiberita.html" class="berita-btn">Read More</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 p-1">
+                      <div class="berita mb-2 mb-sm-3"> <!-- Reduced margin on smaller screens -->
+                        <img src="https://via.placeholder.com/300x200" class="berita-img-top rounded-top" alt="News Image" />
+                        <div class="berita-body shadow bg-light rounded">
+                          <h5 class="berita-title">News Title 8</h5>
+                          <p class="berita-text">
+                            This is a short description of the news content. It provides a brief overview of the main points.
+                          </p>
+                          <div class="berita-btn-container">
+                            <a href="isiberita.html" class="berita-btn">Read More</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="slider-btn next-btn d-none d-md-block">&#10095;</button>
+            </div>
+          </div>
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+    <!-- KERJASAMA -->
+    <section class="bg-light py-5">
+      <div class="container-fluid"> <!-- Changed to container-fluid for full width -->
+        <div class="text-center mb-4">
+          <h2 class=" mb-5 fw-bolder">Kerjasama Kami</h2>
+        </div>
+        <div class="shadow-box">
+          <div id="carouselLogos" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="marquee">
+                  <div class="marquee-content">
+                    <div class="marquee-item">
+                      <img class="icon" src="./assets/img/parter/accurate.png" alt="Client 1">
+                    </div>
+                    <div class="marquee-item">
+                      <img class="icon" src="./assets/img/parter/agro niaga.png" alt="Client 2">
+                    </div>
+                    <div class="marquee-item">
+                      <img class="icon" src="./assets/img/parter/alfamart.png" alt="Client 3">
+                    </div>
+                    <div class="marquee-item">
+                      <img class="icon" src="./assets/img/parter/bsi.png" alt="Client 4">
+                    </div>
+                    <div class="marquee-item">
+                      <img class="icon" src="./assets/img/parter/esa.png" alt="Client 5">
+                    </div>
+                    <div class="marquee-item">
+                      <img class="icon" src="./assets/img/parter/esport indonesia.png" alt="Client 6">
+                    </div>
+                    <div class="marquee-item">
+                      <img class="icon" src="./assets/img/parter/matahari.png" alt="Client 6">
+                    </div>
+                    <div class="marquee-item">
+                      <img class="icon" src="./assets/img/parter/mikrotik.png" alt="Client 6">
+                    </div>
+                    <div class="marquee-item">
+                      <img class="icon" src="./assets/img/parter/oracle.png" alt="Client 6">
+                    </div>
+                    <div class="marquee-item">
+                      <img class="icon" src="./assets/img/parter/pegadaian.png" alt="Client 6">
+                    </div>
+                    <div class="marquee-item">
+                      <img class="icon" src="./assets/img/parter/pn.png" alt="Client 6">
+                    </div>
+                    <div class="marquee-item">
+                      <img class="icon" src="./assets/img/parter/r.png" alt="Client 6">
+                    </div>
+                    <div class="marquee-item">
+                      <img class="icon" src="./assets/img/parter/ramayana.png" alt="Client 6">
+                    </div>
+                    <div class="marquee-item">
+                      <img class="icon" src="./assets/img/parter/royal ole.png" alt="Client 6">
+                    </div>
+                    <div class="marquee-item">
+                      <img class="icon" src="./assets/img/parter/rumah komponen.png" alt="Client 6">
+                    </div>
+                    <div class="marquee-item">
+                      <img class="icon" src="./assets/img/parter/selecta.png" alt="Client 6">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- CONTACT -->
+    <section class="contact-section text-center bg-dark">
+      <h3 class="contact-header mb-5 font-weight-bold text-white">
+        Hubungi kami
+      </h3>
+      <div class="container">
         <div class="row">
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="data-box text-center p-3">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-backpack data-icon" viewBox="0 0 16 16">
-                <path d="M4.04 7.43a4 4 0 0 1 7.92 0 .5.5 0 1 1-.99.14 3 3 0 0 0-5.94 0 .5.5 0 1 1-.99-.14M4 9.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5zm1 .5v3h6v-3h-1v.5a.5.5 0 0 1-1 0V10z"/>
-                <path d="M6 2.341V2a2 2 0 1 1 4 0v.341c2.33.824 4 3.047 4 5.659v5.5a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 2 13.5V8a6 6 0 0 1 4-5.659M7 2v.083a6 6 0 0 1 2 0V2a1 1 0 0 0-2 0m1 1a5 5 0 0 0-5 5v5.5A1.5 1.5 0 0 0 4.5 15h7a1.5 1.5 0 0 0 1.5-1.5V8a5 5 0 0 0-5-5"/>
-              </svg>
-              <h3 class="display-6 fw-bold mb-0">752</h3>
-              <p class="text-uppercase mb-0">Siswa</p>
+          <div class="col-12 col-md-8 ">
+            <div class="map-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.1672392245637!2d112.52305487358201!3d-7.877563578337723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e788124a5f1eda5%3A0x5cd2d83ac55ed767!2sSMK%20ISLAM%20BATU!5e0!3m2!1sid!2sid!4v1722471841253!5m2!1sid!2sid"
+                class="map-iframe rounded "
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="data-box text-center p-3">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person-video3 data-icon" viewBox="0 0 16 16">
-                <path d="M14 9.5a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-6 5.7c0 .8.8.8.8.8h6.4s.8 0 .8-.8-.8-3.2-4-3.2-4 2.4-4 3.2"/>
-                <path d="M2 2a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H2m0-1h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2"/>
-              </svg>
-              <h3 class="display-6 fw-bold mb-0">50</h3>
-              <p class="text-uppercase mb-0">Guru</p>
+          <div class="col-12 col-md-4 my-2 mt-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="white"
+              class="bi bi-map"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M15.817.113A.5.5 0 0 1 16 .5v14a.5.5 0 0 1-.402.49l-5 1a.5.5 0 0 1-.196 0L5.5 15.01l-4.902.98A.5.5 0 0 1 0 15.5v-14a.5.5 0 0 1 .402-.49l5-1a.5.5 0 0 1 .196 0L10.5.99l4.902-.98a.5.5 0 0 1 .415.103M10 1.91l-4-.8v12.98l4 .8zm1 12.98 4-.8V1.11l-4 .8zm-6-.8V1.11l-4 .8v12.98z"
+              />
+            </svg>
+            <div class="contact-info-box bg-contact-second mb-3 mt-2">
+              <h6 class="text-white">Alamat</h6>
+              <p>
+                JL. Barat Stadion Brantas RT / RW : 3 / 2 Desa Sisir Kec. Kec.
+                Batu Kab. Kota Batu Prov. Jawa Timur Kode Pos : 65314
+              </p>
             </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="data-box text-center p-3">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-buildings-fill data-icon" viewBox="0 0 16 16">
-                <path d="M15 .5a.5.5 0 0 0-.724-.447l-8 4A.5.5 0 0 0 6 4.5v3.14L.342 9.526A.5.5 0 0 0 0 10v5.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V14h1v1.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5zM2 11h1v1H2zm2 0h1v1H4zm-1 2v1H2v-1zm1 0h1v1H4zm9-10v1h-1V3zM8 5h1v1H8zm1 2v1H8V7zM8 9h1v1H8zm2 0h1v1h-1zm-1 2v1H8v-1zm1 0h1v1h-1zm3-2v1h-1V9zm-1 2h1v1h-1zm-2-4h1v1h-1zm3 0v1h-1V7zm-2-2v1h-1V5zm1 0h1v1h-1z"/>
-              </svg>
-              <h3 class="display-6 fw-bold mb-0">25</h3>
-              <p class="text-uppercase mb-0">Kelas</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="white"
+              class="bi bi-telephone"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"
+              />
+            </svg>
+            <div class="contact-info-box bg-contact-third mb-3 mt-2">
+              <h6 class="text-white">Nomer telepon</h6>
+              <p>082333929265</p>
             </div>
-          </div>
-        </div>
-      </div>
-      <!-- Fasilitas Section -->
-      <div class="col-md-4 mb-4">
-        <div class="section-header d-flex align-items-center mb-3">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-building-fill-check section-icon" viewBox="0 0 16 16">
-            <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m1.679-4.493-1.335 2.226a.75.75 0 0 1-1.174.144l-.774-.773a.5.5 0 0 1 .708-.708l.547.548 1.17-1.951a.5.5 0 1 1 .858.514"/>
-            <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v7.256A4.5 4.5 0 0 0 12.5 8a4.5 4.5 0 0 0-3.59 1.787A.5.5 0 0 0 9 9.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .39-.187A4.5 4.5 0 0 0 8.027 12H6.5a.5.5 0 0 0-.5.5V16H3a1 1 0 0 1-1-1zm2 1.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5m3 0v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5m3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM4 5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5M7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5M4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z"/>
-          </svg>
-          <h2 class="display-6 fw-bold mb-0 ml-2">Fasilitas</h2>
-        </div>
-        <p class="lead fw-bold mb-4">Informasi penting terkait kegiatan dan berita terbaru sekolah.</p>
-        <ul class="list-unstyled custom-list">
-          <li class="mb-2"><i class="bi bi-check-circle"></i> Pengumuman terbaru</li>
-          <li class="mb-2"><i class="bi bi-check-circle"></i> Kegiatan mendatang</li>
-          <li class="mb-2"><i class="bi bi-check-circle"></i> Berita sekolah</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- CONTACT -->
-<section class="contact-section text-center bg-dark mt-5">
-  <h3 class="contact-header mb-5 font-weight-bold text-white">Hubungi kami</h3>
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-md-8">
-        <div class="map-container">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.1672392245637!2d112.52305487358201!3d-7.877563578337723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e788124a5f1eda5%3A0x5cd2d83ac55ed767!2sSMK%20ISLAM%20BATU!5e0!3m2!1sid!2sid!4v1722471841253!5m2!1sid!2sid"
-            class="map-iframe" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-      </div>
-      <div class="col-12 col-md-4">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-map" viewBox="0 0 16 16">
-          <path fill-rule="evenodd" d="M15.817.113A.5.5 0 0 1 16 .5v14a.5.5 0 0 1-.402.49l-5 1a.5.5 0 0 1-.196 0L5.5 15.01l-4.902.98A.5.5 0 0 1 0 15.5v-14a.5.5 0 0 1 .402-.49l5-1a.5.5 0 0 1 .196 0L10.5.99l4.902-.98a.5.5 0 0 1 .415.103M10 1.91l-4-.8v12.98l4 .8zm1 12.98 4-.8V1.11l-4 .8zm-6-.8V1.11l-4 .8v12.98z"/>
-        </svg>
-        <div class="contact-info-box bg-contact-second mb-3">
-          <h6 class="text-white">Alamat</h6>
-          <p>JL. Barat Stadion Brantas RT / RW : 3 / 2 Desa Sisir Kec. Kec. Batu Kab. Kota Batu Prov. Jawa Timur Kode Pos : 65314</p>
-        </div>
-        <div class="contact-info-box bg-contact-third mb-3">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
-            <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
-          </svg>
-          <h6 class="text-white">Nomer telepon</h6>
-          <p>082333929265</p>
-        </div>
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-envelope-at" viewBox="0 0 16 16">
-          <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z"/>
-          <path d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648m-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"/>
-        </svg>
-        <div class="contact-info-box bg-contact-second">
-          <h6 class="text-white">Email</h6>
-          <p>smkislambatu@gmail.com</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-
-
-<!-- FOOTER -->
-<footer class="pt-lg-10 pt-5 footer">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-4 col-md-6 col-12">
-        <!-- about company -->
-        <div class="mb-4 text-dark"> <!-- Changed from text-white to text-dark -->
-          <img src="../assets/images/brand/logo/logo.svg" alt="" class="logo-inverse">
-          <div class="mt-4 text-dark"> <!-- Changed from text-white to text-dark -->
-            <p>Geek is feature-rich components and beautifully Bootstrap UIKit for developers, built with bootstrap responsive framework.</p>
-            <!-- social media -->
-            <div class="fs-4 mt-4">
-              <!--Facebook-->
-              <a href="#" class="me-2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-facebook" viewBox="0 0 16 16">
-                  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
-                </svg>
-              </a>
-              <!--Twitter-->
-              <a href="#" class="me-2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-twitter" viewBox="0 0 16 16">
-                  <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
-                </svg>
-              </a>
-              <!--GitHub-->
-              <a href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-github" viewBox="0 0 16 16">
-                  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                </svg>
-              </a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="white"
+              class="bi bi-envelope-at"
+              viewBox="0 0 16 16"
+            >
+              <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z"/>
+              <path d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648m-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"/>
+            </svg>
+            <div class="contact-info-box bg-contact-second mt-2">
+              <h6 class="text-white">Email</h6>
+              <p>smkislambatu@gmail.com</p>
             </div>
           </div>
         </div>
       </div>
-      <div class="offset-lg-1 col-lg-2 col-md-3 col-6">
-        <div class="mb-4">
-          <!-- list -->
-          <h3 class="fw-bold mb-3 text-dark">Company</h3> <!-- Changed from text-white to text-dark -->
-          <ul class="list-unstyled nav nav-footer flex-column nav-x-0">
-            <li><a href="#" class="nav-link text-dark">About</a></li> <!-- Changed from text-white to text-dark -->
-            <li><a href="#" class="nav-link text-dark">Pricing</a></li> <!-- Changed from text-white to text-dark -->
-            <li><a href="#" class="nav-link text-dark">Blog</a></li> <!-- Changed from text-white to text-dark -->
-            <li><a href="#" class="nav-link text-dark">Careers</a></li> <!-- Changed from text-white to text-dark -->
-            <li><a href="#" class="nav-link text-dark">Contact</a></li> <!-- Changed from text-white to text-dark -->
-          </ul>
-        </div>
-      </div>
-      <div class="col-lg-2 col-md-3 col-6">
-        <div class="mb-4">
-          <!-- list -->
-          <h3 class="fw-bold mb-3 text-dark">Support</h3> <!-- Changed from text-white to text-dark -->
-          <ul class="list-unstyled nav nav-footer flex-column nav-x-0">
-            <li><a href="#" class="nav-link text-dark">Help and Support</a></li> <!-- Changed from text-white to text-dark -->
-            <li><a href="#" class="nav-link text-dark">Become Instructor</a></li> <!-- Changed from text-white to text-dark -->
-            <li><a href="#" class="nav-link text-dark">Get the app</a></li> <!-- Changed from text-white to text-dark -->
-            <li><a href="#" class="nav-link text-dark">FAQ’s</a></li> <!-- Changed from text-white to text-dark -->
-            <li><a href="#" class="nav-link text-dark">Tutorial</a></li> <!-- Changed from text-white to text-dark -->
-          </ul>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-12">
-        <!-- contact info -->
-        <div class="mb-4 text-dark"> <!-- Changed from text-white to text-dark -->
-          <h3 class="fw-bold mb-3 text-dark">Get in touch</h3> <!-- Changed from text-white to text-dark -->
-          <p>339 McDermott Points Hettingerhaven, NV 15283</p>
-          <p class="mb-1">Email: <a href="#" class="text-dark">support@geeksui.com</a></p> <!-- Changed from text-white to text-dark -->
-          <p>Phone: <span class="text-dark fw-semibold">(000) 123 456 789</span></p> <!-- Changed from text-dark to black -->
-          <div class="d-flex">
-            <a href="#"><img src="../assets/images/svg/appstore.svg" alt="" class="img-fluid"></a>
-            <a href="#" class="ms-2"><img src="../assets/images/svg/playstore.svg" alt="" class="img-fluid"></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row align-items-center g-0 border-top py-2 mt-6">
-      <!-- Desc -->
-      <div class="col-md-10 col-12 text-dark"> <!-- Changed from text-white to text-dark -->
-        <div class="d-lg-flex align-items-center">
-          <div class="me-4">
-            <span>© <span id="copyright5">
-              <script>document.getElementById('copyright5').appendChild(document.createTextNode(new Date().getFullYear()))</script>
-            </span> Geeks-UI</span>
-          </div>
-          <div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
+    </section>
 
-</body>
+
+
+
+
+
+
+
+    <!-- FOOTER -->
+      <footer class="pt-lg-10 pt-5 footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-12">
+              <!-- about company -->
+              <div class="mb-4 text-dark">
+                <img
+                  src="../assets/images/brand/logo/logo.svg"
+                  alt=""
+                  class="logo-inverse"
+                />
+                <div class="mt-4 text-dark">
+                  <p>
+                    Geek is feature-rich components and beautifully Bootstrap
+                    UIKit for developers, built with bootstrap responsive
+                    framework.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="offset-lg-1 col-lg-2 col-md-3 col-6">
+              <div class="mb-4">
+                <!-- list -->
+                <h3 class="fw-bold mb-3 text-dark">Company</h3>
+                <ul class="list-unstyled nav nav-footer flex-column nav-x-0">
+                  <li><a href="#" class="nav-link text-dark">About</a></li>
+                  <li><a href="#" class="nav-link text-dark">Pricing</a></li>
+                  <li><a href="#" class="nav-link text-dark">Blog</a></li>
+                  <li><a href="#" class="nav-link text-dark">Careers</a></li>
+                  <li><a href="#" class="nav-link text-dark">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-6">
+              <div class="mb-4">
+                <!-- list -->
+                <h3 class="fw-bold mb-3 text-dark">Support</h3>
+                <ul class="list-unstyled nav nav-footer flex-column nav-x-0">
+                  <li>
+                    <a href="#" class="nav-link text-dark">Help and Support</a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link text-dark">Become Instructor</a>
+                  </li>
+                  <li><a href="#" class="nav-link text-dark">Get the app</a></li>
+                  <li><a href="#" class="nav-link text-dark">FAQ’s</a></li>
+                  <li><a href="#" class="nav-link text-dark">Tutorial</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-12">
+              <!-- contact info -->
+              <div class="mb-4 text-dark">
+                <h3 class="fw-bold mb-3 text-dark">Get in touch</h3>
+                <p>339 McDermott Points Hettingerhaven, NV 15283</p>
+                <p class="mb-1">
+                  Email: <a href="#" class="text-dark">support@geeksui.com</a>
+                </p>
+                <p>
+                  Phone:
+                  <span class="text-dark fw-semibold">(000) 123 456 789</span>
+                </p>
+                <div class="d-flex">
+                  <a href="#"
+                    ><img
+                      src="../assets/images/svg/appstore.svg"
+                      alt=""
+                      class="img-fluid"
+                  /></a>
+                  <a href="#" class="ms-2"
+                    ><img
+                      src="../assets/images/svg/playstore.svg"
+                      alt=""
+                      class="img-fluid"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row align-items-center g-0 border-top py-2 mt-6">
+            <!-- Desc -->
+            <div class="col-md-10 col-12 text-dark">
+              <div class="d-lg-flex align-items-center">
+                <div class="me-4">
+                  <span
+                    >©
+                    <span id="copyright5">
+                      <script>
+                        document
+                          .getElementById("copyright5")
+                          .appendChild(
+                            document.createTextNode(new Date().getFullYear())
+                          );
+                      </script>
+                    </span>
+                    Geeks-UI</span
+                  >
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    
+    
+  </body>
 </html>

@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=New+Amsterdam&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+.no-overflow {
+    overflow: hidden;
+  }
+.hero-text{
+    font-family: "DM Serif Text", serif;
+    font-style: normal;
+    color: black;
+    transform: translateY(-60px); /* Moves text 50px down */
+}
+@media (max-width: 767px) {
+  .berita {
+    flex: 1 1 45%; /* Make the card wider on smaller screens */
+    margin: 0 5px 15px; /* Reduce the gap between cards */
+  }
+
+  .col-6 {
+    flex: 1 0 50%; /* Each card takes 50% of the width */
+    max-width: 50%; /* Ensure cards do not exceed 50% width */
+  }
+}
+@media (min-width: 200px) {
+  .berita {
+    flex: 1 1 100%; /* Make each card full-width on very small screens */
+    margin: 0 90px 10px; /* Minimal gap on very small screens */
+  }
+}
+.berita {
+  flex: 1 1 30%;
+  margin: 0 8px 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: #000;
+  font-family: "Inter", sans-serif;
+}
+
+
+.berita-img-top {
+  width: 100%;
+  height: auto;
+}
+
+.berita-body {
+  padding: 1rem; 
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+.berita-title {
+  font-size: 1.3rem; /* Adjust font size for mobile */
+  margin-bottom: 6px; /* Reduced margin */
+  font-weight: bolder;
+}
+
+.berita-text {
+  margin-bottom: 6px; /* Reduced margin */
+  font-size: 0.850rem; /* Adjust font size for mobile */
+}
+
+.berita-btn-container {
+  margin-top: auto;
+  display: flex;
+  padding: 4px;
+  padding-bottom: 0.5rem;
+  font-family: "Inter", sans-serif;
+}
+
+.berita-btn {
+  margin-top: auto;
+  font-family: "Inter", sans-serif;
+}

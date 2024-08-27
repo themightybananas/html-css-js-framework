@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>SMKI</title>
+    <meta
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no"
+      name="viewport"
+    />
+    <!-- Fonts and icons -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="./assets/css/container.css" />
+    <link rel="stylesheet" href="./assets/css/card.css" />
+    <link rel="stylesheet" href="./assets/css/data.css" />
+    <link rel="stylesheet" href="./assets/css/contact.css" />
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Link to the external CSS file -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/swipejs@2.2.14/dist/swipe.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/livecanvas-team/ninjabootstrap/dist/css/bootstrap.min.css" media="all">
+    <script src="./assets/js/slider.js" defer></script>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-4 px-3">
+      <div class="container-fluid px-0">
+        <a class="navbar-brand" href="../index.html">
+          <img src="./assets/img/smki.png" alt="SMKI Logo" width="40" />
+          <small class="text-dark navbar-text">SMK ISLAM BATU</small>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-default">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">
+                Beranda
+            </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Informasi Jurusan
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="jurusan.html">Akutansi & Keuangan Lembaga</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="jurusan.html">Pemasaran</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="jurusan.html">Perbankan Syari'ah</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="jurusan.html">Teknik Komputer & Jaringan</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="jurusan.html">Pengembangan Perangkat Lunak & Gim</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="jurusan.html">Desain Komunikasi Visual</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Berita
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                <li>
+                  <a class="dropdown-item" href="berita.html">Prestasi</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="berita.html">Kegiatan Sekolah</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="berita.html">Kegiatan Organisasi</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="berita.html">Ekstrakulikuler</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown3" role="button"data-bs-toggle="dropdown" aria-expanded="false">
+                Fasilitas
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                <li>
+                  <a class="dropdown-item" href="sarana.html">Sarana</a>
+                </li>
+                <li><a class="dropdown-item" href="fasilitas.html">Prasarana</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Layanan
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown4">
+                <li><a class="dropdown-item" href="#">SIAKAD</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Penelusuran Alumni</a>
+                </li>
+                <li><a class="dropdown-item" href="#">TEFA Kami</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Ruang Praktek Siswa</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Kerjasama DUDI</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown5" role="button"data-bs-toggle="dropdown" aria-expanded="false">
+                Pendaftaran Siswa Baru
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown5">
+                <li><a class="dropdown-item" href="#">Daftar</a></li>
+                <li><a class="dropdown-item" href="#">Cek Nama Kamu</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="d-flex justify-content-end w-100">
+            <div class="d-flex align-items-center">
+              <a href="#" class="btn btn-outline-primary shadow-sm mr-2">Sign In</a>
+              <a href="#" class="btn btn-primary d-none d-md-block">Sign Up</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+
+     
+  
+  
+
+
+
+
+
+    <!-- GRID -->
+    <section>
+        <div class="p-0 overflow-hidden container-fluid">
+            <div class="row g-0">
+                <div class="col-lg-6 order-lg-2" style="min-height: 45vh; background-size: cover; background-position: center; background-image: url('./assets/img/bg3.jpg');">
+                </div>
+                <div class="col-lg-6 order-lg-1 my-auto px-5 py-5 bg-light">
+                    <div class="lc-block">
+                        <div editable="rich">
+                            <h1>Your Title goes here</h1>
+                            <p class="lead">Lorem ipsum dolor sit amet Neque porro quisquam est qui dolorem Lorem int ipsum dolor sit amet when an unknown printer took a galley of type.Vivamus id tempor felis. Cras sagittis mi sit amet malesuada mollis. Mauris porroinit consectetur cursus tortor vel interdum.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row g-0">
+                <div class="col-lg-6" style="min-height: 45vh; background-size: cover; background-position: center; background-image: url('./assets/img/bg3.jpg');">
+                </div>
+                <div class="col-lg-6 my-auto px-5 py-5 bg-dark text-white">
+                    <div class="lc-block">
+                        <div editable="rich">
+                            <h1>Your Title goes here</h1>
+                            <p class="lead text-white">Lorem ipsum dolor sit amet Neque porro quisquam est qui dolorem Lorem int ipsum dolor sit amet when an unknown printer took a galley of type. Vivamus id tempor felis. Cras sagittis mi sit amet malesuada mollis.Mauris porroinit consectetur cursus tortor vel interdum.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+
+    <!-- ROW -->
+    <section>
+        <div class="container-fluid px-0">
+            <div class="row g-0">
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <div class="lc-block">
+                        <img class="img-fluid" loading="lazy" alt="Photo by Xie Yujie Nick" src="./assets/img/bg3.jpg">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <div class="lc-block">
+                        <img class="img-fluid" loading="lazy" alt="Photo by Harry Cunningham" src="./assets/img/bg3.jpg">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <div class="lc-block">
+                        <img class="img-fluid" loading="lazy" alt="Photo by Michael Warf" src="./assets/img/bg3.jpg">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <div class="lc-block">
+                        <img class="img-fluid" loading="lazy" alt="Photo by Jonathan Borba" src="./assets/img/bg3.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+    <!-- CALL TO ACTION -->
+    <section class="mt-6">
+        <div class="d-flex text-center" style="min-height: 50vh; background-attachment: fixed; background-size: cover; background-position: center center; background-image: url('./assets/img/bg3.jpg'); background-color: #444; background-blend-mode: overlay;">
+            <div class="lc-block my-3 align-self-center w-100 py-5">
+                <div editable="rich">
+                    <h2 class="display-4 text-warning fw-bolder">This could be your</h2>
+                    <h2 class="display-4 text-warning fw-bold">call to action</h2>
+                </div>
+                <a class="btn btn-outline-warning fw-medium mt-4" href="#" role="button">Daftar Sekarang</a>
+            </div>
+        </div>
+    </section>
+
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- FOOTER -->
+      <footer class="pt-lg-10 pt-5 footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-12">
+              <!-- about company -->
+              <div class="mb-4 text-dark">
+                <img
+                  src="../assets/images/brand/logo/logo.svg"
+                  alt=""
+                  class="logo-inverse"
+                />
+                <div class="mt-4 text-dark">
+                  <p>
+                    Geek is feature-rich components and beautifully Bootstrap
+                    UIKit for developers, built with bootstrap responsive
+                    framework.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="offset-lg-1 col-lg-2 col-md-3 col-6">
+              <div class="mb-4">
+                <!-- list -->
+                <h3 class="fw-bold mb-3 text-dark">Company</h3>
+                <ul class="list-unstyled nav nav-footer flex-column nav-x-0">
+                  <li><a href="#" class="nav-link text-dark">About</a></li>
+                  <li><a href="#" class="nav-link text-dark">Pricing</a></li>
+                  <li><a href="#" class="nav-link text-dark">Blog</a></li>
+                  <li><a href="#" class="nav-link text-dark">Careers</a></li>
+                  <li><a href="#" class="nav-link text-dark">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-6">
+              <div class="mb-4">
+                <!-- list -->
+                <h3 class="fw-bold mb-3 text-dark">Support</h3>
+                <ul class="list-unstyled nav nav-footer flex-column nav-x-0">
+                  <li>
+                    <a href="#" class="nav-link text-dark">Help and Support</a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link text-dark">Become Instructor</a>
+                  </li>
+                  <li><a href="#" class="nav-link text-dark">Get the app</a></li>
+                  <li><a href="#" class="nav-link text-dark">FAQ’s</a></li>
+                  <li><a href="#" class="nav-link text-dark">Tutorial</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-12">
+              <!-- contact info -->
+              <div class="mb-4 text-dark">
+                <h3 class="fw-bold mb-3 text-dark">Get in touch</h3>
+                <p>339 McDermott Points Hettingerhaven, NV 15283</p>
+                <p class="mb-1">
+                  Email: <a href="#" class="text-dark">support@geeksui.com</a>
+                </p>
+                <p>
+                  Phone:
+                  <span class="text-dark fw-semibold">(000) 123 456 789</span>
+                </p>
+                <div class="d-flex">
+                  <a href="#"
+                    ><img
+                      src="../assets/images/svg/appstore.svg"
+                      alt=""
+                      class="img-fluid"
+                  /></a>
+                  <a href="#" class="ms-2"
+                    ><img
+                      src="../assets/images/svg/playstore.svg"
+                      alt=""
+                      class="img-fluid"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row align-items-center g-0 border-top py-2 mt-6">
+            <!-- Desc -->
+            <div class="col-md-10 col-12 text-dark">
+              <div class="d-lg-flex align-items-center">
+                <div class="me-4">
+                  <span
+                    >©
+                    <span id="copyright5">
+                      <script>
+                        document
+                          .getElementById("copyright5")
+                          .appendChild(
+                            document.createTextNode(new Date().getFullYear())
+                          );
+                      </script>
+                    </span>
+                    Geeks-UI</span
+                  >
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </body>
+  </html>

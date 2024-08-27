@@ -4,11 +4,121 @@
 	color: #8d97ad;
   font-weight: 300;
 }
-.carousel-half-height .carousel-inner {
-	height: 75vh;
-  }
-  
+#carouselExampleCaptions .carousel-item {
+  max-height: 800px; /* Adjust this value to your desired height */
+  overflow: hidden;
+}
+.txt-carousel{
+  text-shadow: 6px 5px 4px #000000;
+}
   .carousel-half-height .carousel-inner img {
 	height: 100%;
 	object-fit: cover;
   }
+  @media (max-width: 767.98px) and (max-height: 767.98px) { /* Extra small devices (phones, 600px and down) */
+    .carousel-half-height {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) { /* Small devices (tablets, 768px and up) */
+    .carousel-half-height {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (min-width: 992px) { /* Medium devices (desktops, 992px and up) */
+    .carousel-half-height {
+        margin-bottom: 3rem;
+    }
+}
+.full-width-container {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.marquee-content {
+  display: flex; /* Allows multiple items to stretch horizontally */
+  min-width: 100%; /* Ensures content starts full-width */
+  animation: marquee 20s linear infinite;
+}
+
+.marquee-item {
+  flex: none;
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.icon {
+  width: 90px;
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+  margin: 0 auto;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(100%); /* Starts fully off-screen */
+  }
+  to {
+    transform: translateX(-100%); /* Ends when it's completely off-screen to the left */
+  }
+}
+
+.container-fluid {
+  padding: 0; /* Remove padding for full-width effect */
+}
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navbar {
+  padding: 0.5rem 1rem; /* Adjust padding for all screen sizes */
+}
+
+.navbar-brand img {
+  max-height: 40px; /* Ensures logo fits well */
+}
+
+.navbar-nav .nav-link {
+  padding: 0.5rem 1rem; /* Adjust padding for nav links */
+}
+
+@media (max-width: 576px) {
+  .navbar-nav {
+    text-align: center; /* Center align items on small screens */
+  }
+
+  .nav-item {
+    margin-bottom: 0.5rem; /* Adjust spacing between items */
+  }
+
+  .navbar-toggler {
+    border-color: transparent; /* Hide border on small screens */
+  }
+}
