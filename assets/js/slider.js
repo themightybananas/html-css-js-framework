@@ -90,3 +90,17 @@ document.addEventListener('DOMContentLoaded', function () {
         slider.scrollLeft = scrollLeft - walk;
     });
 });
+window.addEventListener("scroll", function() {
+    const footer = document.querySelector('footer');
+    const whatsappIcon = document.getElementById('whatsapp-icon');
+    const footerPosition = footer.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+  
+    // Show the icon when the footer section is in view
+    if (footerPosition <= windowHeight) {
+      whatsappIcon.style.display = 'block';
+    } else {
+      whatsappIcon.style.display = 'none';
+    }
+  });
+  
