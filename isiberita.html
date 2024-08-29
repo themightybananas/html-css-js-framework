@@ -32,6 +32,11 @@
     <script src="https://unpkg.com/swipejs@2.2.14/dist/swipe.min.js"></script>
     <script src="assets/js/slickSlider.js"></script>
     <script src="./assets/js/slider.js" defer></script>
+    <style>
+      .carousel-item {
+        transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+      }
+    </style>
   </head>
   <body>
     <!-- NAVBAR -->
@@ -170,11 +175,38 @@
                             vulputate eu tellus ac, mattis cursus nunc. In aliquet erat ac eros congue maximus. Fusce cursus leo at elit tincidunt, consequat ultrices ante pretium. Vivamus ut dapibus nisl, nec condimentum purus.</p>
                     </div>
                 </div><!-- /lc-block -->
-                <div class="lc-block">
-                    <div class="ratio ratio-16x9" lc-helper="image-container">
-                        <img src="./assets/img/bg5.jpg" alt="Project Image" class="img-fluid rounded shadow">
-                    </div>
-                </div><!-- /lc-block -->
+                <div class="bd-example  ">
+                  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                      <ol class="carousel-indicators">
+                          <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+                          <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+                          <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+                      </ol>
+                      <div class="carousel-inner rounded">
+                          <div class="carousel-item active position-relative">
+                              <img src="./assets/img/bg3.jpg" class="d-block w-100" alt="..." />
+                              <div class="carousel-caption d-none d-md-block txt-carousel">
+                              </div>
+                          </div>
+                          <div class="carousel-item position-relative">
+                              <img src="./assets/img/bg4.jpg" class="d-block w-100" alt="..." />
+                              <div class="carousel-caption d-none d-md-block txt-carousel">
+                              </div>
+                          </div>
+                          <div class="carousel-item position-relative">
+                              <img src="./assets/img/bg5.jpg" class="d-block w-100" alt="..." />
+                              <div class="carousel-caption d-none d-md-block txt-carousel">
+                              </div>
+                          </div>
+                      </div>
+                      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      </a>
+                  </div>
+              </div>
             </div><!-- /col -->
             <div class="col-md-5">
                 <div class="lc-block card card-body border-0 px-lg-5">
@@ -213,7 +245,7 @@
 
 
     <!-- MORE -->
-    <section class="py-4 py-md-6 bg-light">
+    <section class="py-4 py-md-6">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -301,7 +333,7 @@
               <!-- about company -->
               <div class="mb-4 text-dark">
                 <div class="d-flex align-items-start">
-                  <img src="./assets/img/smki.png" alt="School Image" class="me-2" style="width: 30px; height: 30px;" />
+                  <img src="./assets/img/smki.png" alt="School Image" class="mr-2" style="width: 30px; height: 30px;" />
                   <h4 class="fw-bold text-dark mb-0 border-bottom">Tentang Sekolah</h4>
                 </div>
                 <div class="mt-4 text-dark">
@@ -322,12 +354,12 @@
                 <h4 class="fw-bold text-dark mb-0 border-bottom">Informasi Jurusan</h4>
               </div>
               <ul class="list-unstyled">
-                <li><a href="#" class="nav-link p-0 mb-2">Akutansi & Keuangan Lembaga</a></li>
-                <li><a href="#" class="nav-link p-0 mb-2">Pemasaran</a></li>
-                <li><a href="#" class="nav-link p-0 mb-2">Perbankan Syar'ah</a></li>
-                <li><a href="#" class="nav-link p-0 mb-2">Teknik Komputer & Jaringan</a></li>
-                <li><a href="#" class="nav-link p-0 mb-2">Pengembangan Perangkat Lunak & Gim</a></li>
-                <li><a href="#" class="nav-link p-0 mb-2">Desain Komunikasi Visual</a></li>
+                <li><a href="#" class="nav-link p-0 mb-2" style="color: black;">Akutansi & Keuangan Lembaga</a></li>
+                <li><a href="#" class="nav-link p-0 mb-2" style="color: black;">Pemasaran</a></li>
+                <li><a href="#" class="nav-link p-0 mb-2" style="color: black;">Perbankan Syar'ah</a></li>
+                <li><a href="#" class="nav-link p-0 mb-2" style="color: black;">Teknik Komputer & Jaringan</a></li>
+                <li><a href="#" class="nav-link p-0 mb-2" style="color: black;">Pengembangan Perangkat Lunak & Gim</a></li>
+                <li><a href="#" class="nav-link p-0 mb-2" style="color: black;">Desain Komunikasi Visual</a></li>
               </ul>
             </div>
       
@@ -340,10 +372,10 @@
                 <h4 class="fw-bold text-dark mb-0 border-bottom">Berita</h4>
               </div>
               <ul class="list-unstyled">
-                <li><a href="#" class="nav-link p-0 mb-2">Prestasi</a></li>
-                <li><a href="#" class="nav-link p-0 mb-2">Kegiatan Sekolah</a></li>
-                <li><a href="#" class="nav-link p-0 mb-2">Kegiatan Organisasi</a></li>
-                <li><a href="#" class="nav-link p-0 mb-2">Ekstrakulikuler</a></li>
+                <li><a href="#" class="nav-link p-0 mb-2" style="color: black;">Prestasi</a></li>
+                <li><a href="#" class="nav-link p-0 mb-2" style="color: black;">Kegiatan Sekolah</a></li>
+                <li><a href="#" class="nav-link p-0 mb-2" style="color: black;">Kegiatan Organisasi</a></li>
+                <li><a href="#" class="nav-link p-0 mb-2" style="color: black;">Ekstrakulikuler</a></li>
               </ul>
             </div>
       

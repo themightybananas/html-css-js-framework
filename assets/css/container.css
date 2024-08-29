@@ -49,15 +49,15 @@
 }
 
 .marquee-content {
-  display: flex; /* Allows multiple items to stretch horizontally */
-  min-width: 100%; /* Ensures content starts full-width */
-  animation: marquee 20s linear infinite;
+  display: flex;
+  width: 200%; /* Ensure the content is twice the width of the container */
+  animation: marquee 25s linear infinite; /* Adjust duration as needed */
 }
 
 .marquee-item {
   flex: none;
   display: inline-block;
-  margin-right: 1rem;
+  margin-right: 1.5rem;
 }
 
 .icon {
@@ -68,14 +68,13 @@
 }
 
 @keyframes marquee {
-  from {
-    transform: translateX(100%); /* Starts fully off-screen */
+  0% {
+    transform: translateX(0); /* Start from the beginning */
   }
-  to {
-    transform: translateX(-100%); /* Ends when it's completely off-screen to the left */
+  100% {
+    transform: translateX(-50%); /* Move left by half the width of the content */
   }
 }
-
 .container-fluid {
   padding: 0; /* Remove padding for full-width effect */
 }
