@@ -265,3 +265,11 @@ body {
 .my-float{
 	margin-top:16px;
 }
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    text-align: left;
+  }
+  .navbar-collapse .d-flex {
+    justify-content: flex-start !important;
+  }
+}
