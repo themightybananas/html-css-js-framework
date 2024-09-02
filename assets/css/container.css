@@ -32,51 +32,71 @@
         margin-bottom: 3rem;
     }
 }
-.full-width-container {
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  margin-right: calc(-50vw + 50%);
-  padding: 0;
-  box-sizing: border-box;
+/* Ensure the container is full-width */
+/* Full-width wrapper to span the entire page width */
+.slider2-kerjasama-wrapper {
+  width: 100%; /* Changed from 100vw to 100% to avoid overflow */
+  overflow: hidden;
+  position: relative;
+  background: white;
+  padding: 0; /* Remove any padding that might cause overflow */
 }
 
-.marquee {
-  overflow: hidden;
-  white-space: nowrap;
+/* Ensure the slider spans the full width of its container */
+.slider2-kerjasama {
   width: 100%;
-  box-sizing: border-box;
+  margin: 0 auto;
+  overflow: hidden;
   position: relative;
 }
 
-.marquee-content {
+/* The sliding track for logos */
+.slide-track2-kerjasama {
   display: flex;
-  width: 200%; /* Ensure the content is twice the width of the container */
-  animation: marquee 25s linear infinite; /* Adjust duration as needed */
+  width: fit-content;
+  -webkit-animation: scroll-kerjasama 30s linear infinite;
+  animation: scroll-kerjasama 30s linear infinite;
 }
 
-.marquee-item {
-  flex: none;
-  display: inline-block;
-  margin-right: 1.5rem;
+/* Each slide (logo container) */
+.slide2-kerjasama {
+  min-width: 100px;
+  max-width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px; /* Margin between logos */
 }
 
-.icon {
+/* Ensure all images stay at 90px wide, regardless of screen size */
+.slide2-kerjasama img {
   width: 90px;
-  height: auto; /* Maintain aspect ratio */
-  display: block;
-  margin: 0 auto;
+  height: auto;
+  max-height: 90px;
+  object-fit: contain; /* Maintain aspect ratio */
 }
 
-@keyframes marquee {
+/* Keyframes for the sliding animation */
+@-webkit-keyframes scroll-kerjasama {
   0% {
-    transform: translateX(0); /* Start from the beginning */
+    transform: translateX(100%); /* Start from the right edge */
   }
   100% {
-    transform: translateX(-50%); /* Move left by half the width of the content */
+    transform: translateX(-100%); /* End after scrolling past all logos */
+  }
+}
+
+@keyframes scroll-kerjasama {
+  0% {
+    transform: translateX(100%); /* Start from the right edge */
+  }
+  100% {
+    transform: translateX(-100%); /* End after scrolling past all logos */
   }
 }
 .container-fluid {
-  padding: 0; /* Remove padding for full-width effect */
+  padding: 0; 
 }
 
 
