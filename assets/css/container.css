@@ -32,8 +32,6 @@
         margin-bottom: 3rem;
     }
 }
-/* Ensure the container is full-width */
-/* Full-width wrapper to span the entire page width */
 .slider2-kerjasama-wrapper {
   width: 100%; /* Changed from 100vw to 100% to avoid overflow */
   overflow: hidden;
@@ -89,7 +87,7 @@
 
 @keyframes scroll-kerjasama {
   0% {
-    transform: translateX(100%); /* Start from the right edge */
+    transform: translateX(60%); /* Start from the right edge */
   }
   100% {
     transform: translateX(-100%); /* End after scrolling past all logos */

@@ -53,6 +53,8 @@
     width: 250px;  /* Fixed width */
     height: 250px; /* Fixed height */
     object-fit: cover; /* Ensures the image covers the area without distortion */
+    overflow: hidden; /* Hide any overflow */
+    position: relative;
   }
   @media (max-width: 768px) {
     .card-gap {
