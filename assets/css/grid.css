@@ -1,5 +1,5 @@
 .custom-border-bottom {
-    border-bottom: 4px solid #17a2b8; /* Change 4px to your desired thickness and color */
+    border-bottom: 3px solid #17a2b8; /* Change 4px to your desired thickness and color */
 }
 
 
@@ -19,29 +19,34 @@
     border-bottom-left-radius: 0.25rem;
     border-bottom-right-radius: 0.25rem;
     overflow: hidden;
-  }
-  
-  .grid-text-overlay {
+}
+
+.grid-text-overlay {
     position: absolute;
     bottom: 1px;
     z-index: 2;
-  }
-  
-  .grid-text-overlay h2 {
+    padding: 1rem; /* Added padding for better spacing */
+}
+
+.grid-text-overlay h2 {
     font-size: calc(1.5rem + 1vw); /* Responsive text size */
     margin-bottom: 0.5rem;
-  }
-  
-  .grid-text-overlay p {
-    font-size: 1rem; /* Optional: Adjust font size */
-  }
-  
-  @media (max-width: 768px) {
+}
+
+.grid-text-overlay p {
+    font-size: calc(0.875rem + 0.5vw); /* Responsive text size for paragraph */
+}
+
+@media (max-width: 768px) {
     .grid-text-overlay h2 {
-        font-size: 1.5rem; /* Smaller text on mobile */
+        font-size: 1.5rem; /* Adjust text size for smaller screens */
     }
-  }
-  
+
+    .grid-text-overlay p {
+        font-size: 1rem; /* Adjust text size for smaller screens */
+    }
+}
+
   
   
   
