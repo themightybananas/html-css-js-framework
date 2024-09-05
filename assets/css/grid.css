@@ -1,0 +1,82 @@
+.custom-border-bottom {
+    border-bottom: 4px solid #17a2b8; /* Change 4px to your desired thickness and color */
+}
+
+
+
+
+
+
+.grid-gradient-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    right: 15px;
+    height: 100%;
+    background: linear-gradient(184deg, rgba(81,194,251,0) 0%, rgba(11,56,109,1) 100%);
+    pointer-events: none;
+    z-index: 1;
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+    overflow: hidden;
+  }
+  
+  .grid-text-overlay {
+    position: absolute;
+    bottom: 1px;
+    z-index: 2;
+  }
+  
+  .grid-text-overlay h2 {
+    font-size: calc(1.5rem + 1vw); /* Responsive text size */
+    margin-bottom: 0.5rem;
+  }
+  
+  .grid-text-overlay p {
+    font-size: 1rem; /* Optional: Adjust font size */
+  }
+  
+  @media (max-width: 768px) {
+    .grid-text-overlay h2 {
+        font-size: 1.5rem; /* Smaller text on mobile */
+    }
+  }
+  
+  
+  
+  
+
+
+  
+  .grid2-gradient-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    right: 15px;
+    height: 100%; /* Adjust based on how much of the image you want covered */
+    background: linear-gradient(184deg, rgba(81,194,251,0) 0%, rgba(11,56,109,1) 100%);
+    pointer-events: none;
+    z-index: 1;
+  } 
+  
+  .grid2-text-overlay {
+    position: absolute;
+    bottom: 10px; /* Adjust positioning if needed */
+    left: 10px;
+    z-index: 2;
+  }
+  
+  .grid2-text-overlay h5 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .grid2-text-overlay p {
+    font-size: 0.875rem; /* Optional: Adjust font size */
+  }
+  
+  @media (max-width: 768px) {
+    .grid2-text-overlay h5 {
+        font-size: 1.25rem; /* Smaller text on mobile */
+    }
+  }
+  
