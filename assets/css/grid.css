@@ -1,11 +1,15 @@
 .custom-border-bottom {
     border-bottom: 3px solid #17a2b8; /* Change 4px to your desired thickness and color */
 }
+.carousel-item {
+  display: flex;
+  overflow: hidden;
+}
 
-
-
-
-
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}
 
 .grid-gradient-overlay {
     position: absolute;
@@ -23,7 +27,7 @@
 
 .grid-text-overlay {
     position: absolute;
-    bottom: 1px;
+    bottom: -10px;
     z-index: 2;
     padding: 1rem; /* Added padding for better spacing */
     text-decoration: none;
@@ -72,7 +76,7 @@
   
   .grid2-text-overlay {
     position: absolute;
-    bottom: 10px; /* Adjust positioning if needed */
+    bottom: -2px; /* Adjust positioning if needed */
     left: 10px;
     z-index: 2;
   }
@@ -187,12 +191,12 @@
     left: 30px;
     z-index: 2;
     text-decoration: none;
-    color: white;
+    color: white; 
   }
   .grid4-text-overlay h5 {
-    font-size: 0.860rem;
+    font-size: 0.960rem;
   }
   .grid4-text-overlay p {
-    font-size: 0.700rem;
+    font-size: 0.750rem;
   }
 }

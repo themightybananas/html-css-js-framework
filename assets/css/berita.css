@@ -6,8 +6,7 @@
 .hero-text{
     font-family: "DM Serif Text", serif;
     font-style: normal;
-    color: black;
-    transform: translateY(-60px); /* Moves text 50px down */
+    transform: translateY(-60px);
 }
 @media (max-width: 767px) {
   .berita {
