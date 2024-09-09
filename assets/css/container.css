@@ -6,6 +6,40 @@
 	color: #8d97ad;
   font-weight: 300;
 }
+.text-container {
+  margin-bottom: 120px;
+  margin-right: 510px;
+}
+
+@media (max-width: 1200px) {
+  .text-container {
+    margin-bottom: 100px;
+    margin-right: 400px;
+  }
+}
+
+@media (max-width: 992px) {
+  .text-container {
+    margin-bottom: 80px;
+    margin-right: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .text-container {
+    margin-bottom: 60px;
+    margin-right: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .text-container {
+    margin-bottom: 20px;
+    margin-right: 0; /* Remove margin-right for smaller screens */
+    padding: 10px; /* Add padding for better spacing */
+    text-align: center; /* Center the text on smaller screens */
+  }
+}
 
 .hero{
   font-family: "DM Serif Text", serif;
