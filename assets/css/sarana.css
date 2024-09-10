@@ -1,3 +1,10 @@
-.carousel-inner{
-    box-shadow: 0px 10px 70px 21px #423F3E;
-}
+.slick-slide {
+    padding: 0 5px; /* Adjust the gap as needed */
+  }
+  
+  .slick-slide img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  

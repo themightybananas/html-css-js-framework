@@ -103,4 +103,23 @@ window.addEventListener("scroll", function() {
       whatsappIcon.style.display = 'none';
     }
   });
+
+  $('.slick-carousel').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    prevArrow: '<button class="slick-prev">&lt;</button>',
+    nextArrow: '<button class="slick-next">&gt;</button>',
+    responsive: [
+      {
+        breakpoint: 768, // Adjust the breakpoint as needed
+        settings: {
+          slidesToShow: 2
+        }
+      }
+    ]
+  });
   
