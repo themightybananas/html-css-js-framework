@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=New+Amsterdam&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url(//fonts.googleapis.com/css?family=Montserrat:300,400,500);
 .custom-container {
 	background-color: #ffffff; 
   }
@@ -9,4 +12,83 @@
   }
   .sarana{
     padding: 10px;
+}
+
+
+
+
+
+.hero-section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  overflow: hidden;
+  font-family: "DM Serif Text", serif;
+  font-style: normal;
+}
+
+.hero-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Semi-transparent dark overlay */
+  z-index: 1;
+}
+
+.overlay-text {
+  z-index: 2;
+}
+
+.floating-card {
+  position: absolute;
+  top: 30%;
+  right: 15%;
+  background: rgba(255, 255, 255, 0.2); /* Glassmorphism */
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  max-width: 250px; /* Limit the card's width on larger screens */
+}
+
+.floating-card p {
+  margin-bottom: 0;
+  color: white;
+}
+
+@media (max-width: 992px) {
+  .floating-card {
+    top: 40%;
+    right: 10%;
+    max-width: 220px; /* Slightly reduce the width */
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    height: 80vh;
+    text-align: center;
+  }
+
+  .floating-card {
+    top: 5%;
+    right: 5%;
+    max-width: 200px;
+  }
 }

@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="./assets/css/fasilitas.css" />
     <link rel="stylesheet" href="./assets/css/card.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <!-- Link to the external CSS file -->
     <script src="https://unpkg.com/jquery@3.6.1/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -100,59 +102,25 @@
 
 
 
-
-
-
-
-    <!-- CAROUSEL -->
-    <div class="bg-light p-2">
-      <div class="container my-4">
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
-            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
-            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner shadow-lg mb-5 rounded">
-            <div class="carousel-item active">
-              <img src="./assets/img/bg3.jpg" class="d-block w-100" alt="First slide">
-              <div class="carousel-caption d-none d-md-block">
-                <div class="text-left rounded p-3 bg-warning d-inline-block text-container col-6" style="left:-190px; top:-85px;">
-                  <h2 class="hero border-bottom border-danger text-dark">First slide label</h2>
-                  <p class="text-dark">Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/img/bg4.jpg" class="d-block w-100" alt="Second slide">
-              <div class="carousel-caption d-none d-md-block">
-                <div class="text-left rounded p-3 bg-warning d-inline-block text-container col-6" style="left:-190px; top:-85px;">
-                  <h2 class="hero border-bottom border-danger text-dark">Second slide label</h2>
-                  <p class="text-dark">Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/img/bg5.jpg" class="d-block w-100" alt="Third slide">
-              <div class="carousel-caption d-none d-md-block">
-                <div class="text-left rounded p-3 bg-warning d-inline-block text-container col-6" style="left:-190px; top:-85px;">
-                  <h2 class="hero border-bottom border-danger text-dark">Third slide label</h2>
-                  <p class="text-dark">Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </a>
-        </div>
+    <!-- HERO -->
+    <div class="hero-section">
+      <img src="./assets/img/fasilitas/Gedung A.jpg" alt="Background image" class="hero-img">
+      <div class="dark-overlay"></div>
+      <div class="container overlay-text text-white">
+        <h1 class="display-3"><span class="">Prasarana</span><br>SMK Islam Batu</h1>
+      </div>
+      <div class="floating-card">
+        <p>Gedung A</p>
       </div>
     </div>
+    
+
+
+
+
+
+
+
     
   
 
@@ -171,54 +139,147 @@
   
 
 
-    <!-- PRASARANA -->
-    <div class="bg-dark p-5">
-    <div class="row row-cols-1 row-cols-lg-2 g-0 overflow-hidden mx-5 p-4">
-      <div class="col">
-          <div class="lc-block">
-            <h1 class="text-white display-4 fw-bold">PRASARANA <span class="bg-warning text-dark"> SMK ISLAM BATU</span></h1>
-          </div>
-      </div>
-    </div>
-      <div class="col-12">
-        <div class="row g-0 overflow-hidden">
-      <div class="col-lg-7">
-          <div class="lc-block">
-            <img src="./assets/img/bg3.jpg" class="img-fluid w-100" alt="Responsive image">
-          </div>
-      </div>
-      <div class="col-lg-5">
-          <div class="lc-block">
-            <img src="./assets/img/bg4.jpg" class="img-fluid w-100" alt="Responsive image">
-            <p class="text-white mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas maiores, aut exercitationem ducimus reiciendis ipsa minus facilis, ea incidunt accusantium obcaecati, quasi voluptatibus perferendis culpa possimus asperiores recusandae nesciunt nobis!</p>
-          </div>
-      </div>
-    </div>
-  </div>
+  <!-- PRASARANA -->
+  <div class="bg-dark p-5">
     <div class="container py-5">
       <div class="row align-items-center">
-        <div class="col-9 mb-4 mb-lg-0">
-          <div>
-            <h1 class="display-4 mt-3 text-white">Creating Inspiring Designs to Transform Spaces</h1>
+        <!-- Left Column: Title and Text -->
+        <div class="col-lg-6 mb-4 mb-lg-0 text-white">
+          <h2 class="fw-bold">Our Legacy of Building Dreams</h2>
+          <p>Over the years, DreamHouse has grown from a vision to a trusted real estate partner. We have helped countless families and individuals achieve their dream of homeownership, and we take immense pride in the positive impact we've made on our community.</p>
+        </div>
+        <div class="col-lg-6">
+          <div class="row text-center">
+            <div class="col-md-3 col-sm-4 col-5 mb-4 bg-warning rounded p-2 mr-2">
+              <h3 class="fw-bold">+100</h3>
+              <p>Unit Already</p>
+            </div>
+            <div class="col-md-4 col-sm-3 col-4 mb-4 bg-warning rounded p-2 mr-2">
+              <h3 class="fw-bold">+60K</h3>
+              <p>Customer</p>
+            </div>
+            <div class="col-md-3 col-sm-3 col-4 mb-4 bg-warning rounded p-2 mr-2">
+              <h3 class="fw-bold">99%</h3>
+              <p>Satisfied</p>
+            </div>
+            <div class="col-md-4 col-sm-3 col-5 mb-4 bg-warning rounded p-2 mr-2">
+              <h3 class="fw-bold">+70K</h3>
+              <p>Reviews</p>
+            </div>
+            <div class="col-md-3 col-sm-3 col-5 mb-4 bg-warning rounded p-2 mr-2">
+              <h4 class="fw-bold">+70K</h4>
+              <p>Reviews</p>
+            </div>
+            <div class="col-md-3 col-sm-4 col-4 mb-4 bg-warning rounded p-2 mr-2">
+              <h3 class="fw-bold">+70K</h3>
+              <p>Reviews</p>
+            </div>
+          </div>
+        </div>      
+      </div>
+    </div>
+    <!-- ROW 1 -->
+    <div class="container mt-4">
+      <div class="d-flex align-items-center">
+        <h3 class="mb-2 font-weight-bold text-warning">Lab Sekolah</h3>
+        <div class="flex-grow-1">
+          <hr class="ml-2 m-0" style="border-color: yellow;">
+        </div>
+      </div>
+    </div> 
+    <div class="col-12">
+      <div class="row g-0 overflow-hidden">
+        <div class="col-lg-7 col-md-7 col-12 mb-3 mb-md-0">
+          <div class="lc-block">
+            <img src="./assets/img/fasilitas/Lab-4.jpg" class="img-fluid w-100 shadow" alt="Responsive image">
           </div>
         </div>
-      <div class="row text-center mt-5">
-        <div class="col-lg-4 col-4 text-white">
-          <h2 class="display-4">50+</h2>
-          <p>Satisfied Clients</p>
-        </div>
-        <div class="col-lg-4 col-4 text-white">
-          <h2 class="display-4">100+</h2>
-          <p>Projects Completed</p>
-        </div>
-        <div class="col-lg-4 col-4 text-white">
-          <h2 class="display-4">10+</h2>
-          <p>Years in Business</p>
+        <div class="col-lg-5 col-md-5 col-12">
+          <div class="lc-block">
+            <img src="./assets/img/fasilitas/Lab-3.jpg" class="img-fluid w-100 shadow" alt="Responsive image">
+            <p class="text-white mt-3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas maiores, aut exercitationem ducimus reiciendis ipsa minus facilis, ea incidunt accusantium obcaecati, quasi voluptatibus perferendis culpa possimus asperiores
+            </p>
+          </div>
         </div>
       </div>
     </div>
+    <!-- ROW 2 -->
+    <div class="container mt-4">
+      <div class="d-flex align-items-center">
+        <h3 class="mb-2 font-weight-bold text-warning">Kantin</h3>
+        <div class="flex-grow-1">
+          <hr class="ml-2 m-0" style="border-color: yellow;">
+        </div>
+      </div>
+    </div> 
+    <div class="col-12">
+      <div class="row g-0 overflow-hidden">
+        <div class="col-lg-5 col-md-5 col-12 mb-3 mb-md-0">
+          <div class="lc-block">
+            <img src="./assets/img/fasilitas/Kantin.jpg" class="img-fluid w-100 shadow" alt="Responsive image">
+            <p class="text-white mt-3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas maiores, aut exercitationem ducimus reiciendis ipsa minus facilis, ea incidunt accusantium obcaecati, quasi voluptatibus perferendis culpa possimus asperiores
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-7 col-md-7 col-12">
+          <div class="lc-block">
+            <img src="./assets/img/fasilitas/Mart.jpg" class="img-fluid w-100 shadow" alt="Responsive image">
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- CAROUSEL -->
+      <div class="container my-5">
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+              <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+              <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner shadow-lg mb-5 rounded">
+              <div class="carousel-item active">
+                <img src="./assets/img/bg3.jpg" class="d-block w-100" alt="First slide">
+                <div class="carousel-caption d-none d-md-block">
+                  <div class="text-left rounded p-3 bg-warning d-inline-block text-container col-6" style="left:-190px; top:-85px;">
+                    <h2 class="hero border-bottom border-danger text-dark">First slide label</h2>
+                    <p class="text-dark">Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/img/bg4.jpg" class="d-block w-100" alt="Second slide">
+                <div class="carousel-caption d-none d-md-block">
+                  <div class="text-left rounded p-3 bg-warning d-inline-block text-container col-6" style="left:-190px; top:-85px;">
+                    <h2 class="hero border-bottom border-danger text-dark">Second slide label</h2>
+                    <p class="text-dark">Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/img/bg5.jpg" class="d-block w-100" alt="Third slide">
+                <div class="carousel-caption d-none d-md-block">
+                  <div class="text-left rounded p-3 bg-warning d-inline-block text-container col-6" style="left:-190px; top:-85px;">
+                    <h2 class="hero border-bottom border-danger text-dark">Third slide label</h2>
+                    <p class="text-dark">Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </a>
+          </div>
+      </div>
   </div>
-</div>
+
 
    
    
