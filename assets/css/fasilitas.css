@@ -54,41 +54,10 @@
   z-index: 2;
 }
 
-.floating-card {
-  position: absolute;
-  top: 30%;
-  right: 15%;
-  background: rgba(255, 255, 255, 0.2); /* Glassmorphism */
-  border-radius: 10px;
-  backdrop-filter: blur(10px);
-  padding: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  z-index: 2;
-  max-width: 250px; /* Limit the card's width on larger screens */
-}
-
-.floating-card p {
-  margin-bottom: 0;
-  color: white;
-}
-
-@media (max-width: 992px) {
-  .floating-card {
-    top: 40%;
-    right: 10%;
-    max-width: 220px; /* Slightly reduce the width */
-  }
-}
 
 @media (max-width: 768px) {
   .hero-section {
     height: 80vh;
     text-align: center;
-  }
-
-  .floating-card {
-    top: 5%;
-    right: 5%;
-    max-width: 200px;
   }
 }
