@@ -23,6 +23,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <!-- Link to the external CSS file -->
     <script src="https://unpkg.com/jquery@3.6.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/slider.js" defer></script>    
     <script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
@@ -111,8 +114,7 @@
         <h1 class="display-3"><span class="">Prasarana</span><br>SMK Islam Batu</h1>
       </div>
     </div>
-    
-
+  
 
 
 
@@ -177,7 +179,7 @@
     </div>
 
     <div class="d-flex text-center position-relative mx-3" style="min-height: 20vh; background-attachment: fixed; background-size: cover; background-position: center center; background-image: url('./assets/img/fasilitas/Kelas.jpg');">
-      <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0, 0, 0, 0.5); z-index: 1;"></div>
+      <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0, 0, 0, 0.4); z-index: 1;"></div>
       <div class="lc-block my-3 align-self-center w-100 py-5 position-relative" style="z-index: 2;">
           <div editable="rich">
               <h2 class="display-4 fw-bold text-white">Fasilitas Yang Memadai Di <span class="text-warning"> Setiap Kelas</span></h2>
@@ -190,7 +192,7 @@
     <!-- LAB -->
     <div class="container mt-4">
       <div class="d-flex align-items-center">
-        <h3 class="mb-2 font-weight-bold text-warning">Lab Sekolah</h3>
+        <h3 class="mb-2 font-weight-bold text-white">Lab Sekolah</h3>
         <div class="flex-grow-1">
           <hr class="ml-2 m-0" style="border-color: yellow;">
         </div>
@@ -214,7 +216,7 @@
     <!-- KANTIN -->
     <div class="container mt-4">
       <div class="d-flex align-items-center">
-        <h3 class="mb-2 font-weight-bold text-warning">Kantin</h3>
+        <h3 class="mb-2 font-weight-bold text-white">Kantin</h3>
         <div class="flex-grow-1">
           <hr class="ml-2 m-0" style="border-color: yellow;">
         </div>
@@ -240,10 +242,10 @@
     <div class="row g-0 pt-5">
       <div class="col-lg-6 ml-5" style="min-height: 45vh; background-size: cover; background-position: center; background-image: url('./assets/img/fasilitas/Mushola.jpg');">
       </div>
-      <div class="col-lg-5 order-lg-1 my-auto px-5 py-5">
+      <div class="col-lg-5 order-lg-1 my-5 px-5">
           <div class="lc-block">
               <div editable="rich">
-                  <h1 class="text-warning border-bottom border-warning">Mushola</h1>
+                  <h1 class="text-white border-bottom border-warning">Mushola</h1>
                   <p class="lead text-white text-justify">Mushola SMK Islam Batu merupakan fasilitas penting yang dirancang untuk memberikan kenyamanan bagi siswa dan staf dalam menjalankan ibadah sehari-hari. Dengan suasana yang tenang dan sejuk, mushola ini menjadi tempat yang ideal untuk mendekatkan diri kepada Allah serta merenungi nilai-nilai spiritual. Dilengkapi dengan fasilitas yang memadai.</p>
               </div>
           </div>
@@ -252,97 +254,39 @@
     
 
       <!-- CAROUSEL -->
-      <div class="container mt-4">
-        <div class="d-flex align-items-center">
-          <h1 class="mb-2 font-weight-bold text-warning">Semua Ruangan</h1>
-          <div class="flex-grow-1">
-            <hr class="ml-2 m-0" style="border-color: yellow;">
-          </div>
-        </div>
-      </div> 
-      <div id="carouselExample" class="carousel slide mt-5" data-bs-ride="carousel" data-bs-interval="7000"> 
-        <ol class="carousel-indicators">
-          <li data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"></li>
-          <li data-bs-target="#carouselExample" data-bs-slide-to="1"></li>
-          <li data-bs-target="#carouselExample" data-bs-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner shadow-lg mb-5 rounded">
-          <div class="carousel-item active">
-            <div class="row">
-              <div class="col-6 col-md-4">
-                <img src="./assets/img/bg3.jpg" class="d-block w-100" alt="First image">
-                <div class="carousel-caption d-none d-md-block">
-                  <h4>First Image Title</h4>
+        <section class="pb-5">
+          <div class="container rounded mt-2 pt-3">
+            <div class="container mt-4">
+              <div class="d-flex align-items-center">
+                <h3 class="mb-2 text-white font-weight-bold">Lebih Lengkap</h3>
+                <div class="flex-grow-1">
+                  <hr class="ml-2 m-0" style="border-color: yellow;">
                 </div>
               </div>
-              <div class="col-6 col-md-4">
-                <img src="./assets/img/bg4.jpg" class="d-block w-100" alt="Second image">
-                <div class="carousel-caption d-none d-md-block">
-                  <h4>Second Image Title</h4>
-                </div>
+            </div> 
+          <div class="container-fluid px-0 pt-4">
+            <div class="slick-carousel">
+              <div>
+                <img class="img-fluid" loading="lazy" alt="Photo by Xie Yujie Nick" src="./assets/img/bg3.jpg">
               </div>
-              <div class="col-6 col-md-4 d-none d-md-block">
-                <img src="./assets/img/bg3.jpg" class="d-block w-100" alt="Third image">
-                <div class="carousel-caption d-none d-md-block">
-                  <h4>Third Image Title</h4>
-                </div>
+              <div>
+                <img class="img-fluid" loading="lazy" alt="Photo by Harry Cunningham" src="./assets/img/bg3.jpg">
+              </div>
+              <div>
+                <img class="img-fluid" loading="lazy" alt="Photo by Michael Warf" src="./assets/img/bg3.jpg">
+              </div>
+              <div>
+                <img class="img-fluid" loading="lazy" alt="Photo by Jonathan Borba" src="./assets/img/bg3.jpg">
+              </div>
+              <div>
+                <img class="img-fluid" loading="lazy" alt="Photo by Jonathan Borba" src="./assets/img/bg3.jpg">
+              </div>
+              <div>
+                <img class="img-fluid" loading="lazy" alt="Photo by Jonathan Borba" src="./assets/img/bg3.jpg">
               </div>
             </div>
           </div>
-          <div class="carousel-item">
-            <div class="row">
-              <div class="col-6 col-md-4">
-                <img src="./assets/img/bg3.jpg" class="d-block w-100" alt="Fourth image">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Fourth Image Title</h5>
-                </div>
-              </div>
-              <div class="col-6 col-md-4">
-                <img src="./assets/img/bg4.jpg" class="d-block w-100" alt="Fifth image">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Fifth Image Title</h5>
-                </div>
-              </div>
-              <div class="col-6 col-md-4 d-none d-md-block">
-                <img src="./assets/img/bg3.jpg" class="d-block w-100" alt="Sixth image">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Sixth Image Title</h5>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              <div class="col-6 col-md-4">
-                <img src="./assets/img/bg3.jpg" class="d-block w-100" alt="Fourth image">
-                <div class="carousel-caption d-none d-md-block">
-                  <h4>Fourth Image Title</h4>
-                </div>
-              </div>
-              <div class="col-6 col-md-4">
-                <img src="./assets/img/bg4.jpg" class="d-block w-100" alt="Fifth image">
-                <div class="carousel-caption d-none d-md-block">
-                  <h4>Fifth Image Title</h4>
-                </div>
-              </div>
-              <div class="col-6 col-md-4 d-none d-md-block">
-                <img src="./assets/img/bg3.jpg" class="d-block w-100" alt="Sixth image">
-                <div class="carousel-caption d-none d-md-block">
-                  <h4>Sixth Image Title</h4>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExample" role="button" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExample" role="button" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </a>
-      </div>
+        </section>
   </div>
 
 
