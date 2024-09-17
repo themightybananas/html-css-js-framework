@@ -83,67 +83,56 @@
 
 
 
-.slider2-kerjasama-wrapper {
-  width: 100%; /* Changed from 100vw to 100% to avoid overflow */
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
   overflow: hidden;
+  padding: 10px;
+  background: white;
+  white-space: nowrap;
   position: relative;
 }
 
-/* Ensure the slider spans the full width of its container */
-.slider2-kerjasama {
-  width: 100%;
-  margin: 0 auto;
-  overflow: hidden;
-  position: relative;
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
 }
 
-/* The sliding track for logos */
-.slide-track2-kerjasama {
-  display: flex;
-  width: fit-content;
-  -webkit-animation: scroll-kerjasama 30s linear infinite;
-  animation: scroll-kerjasama 30s linear infinite;
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
 }
 
-/* Each slide (logo container) */
-.slide2-kerjasama {
-  min-width: 100px;
-  max-width: 100px;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 10px; /* Margin between logos */
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
 }
 
-/* Ensure all images stay at 90px wide, regardless of screen size */
-.slide2-kerjasama img {
-  width: 90px;
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 35s slide infinite linear;
+}
+
+.logos-slide img {
+  width: 100px;
   height: auto;
-  max-height: 90px;
-  object-fit: contain; /* Maintain aspect ratio */
-}
-
-/* Keyframes for the sliding animation */
-@-webkit-keyframes scroll-kerjasama {
-  0% {
-    transform: translateX(100%); /* Start from the right edge */
-  }
-  100% {
-    transform: translateX(-100%); /* End after scrolling past all logos */
-  }
-}
-
-@keyframes scroll-kerjasama {
-  0% {
-    transform: translateX(60%); /* Start from the right edge */
-  }
-  100% {
-    transform: translateX(-100%); /* End after scrolling past all logos */
-  }
-}
-.container-fluid {
-  padding: 0; 
+  margin: 0 40px;
 }
 
 
