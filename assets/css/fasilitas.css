@@ -61,3 +61,48 @@
     text-align: center;
   }
 }
+.carousel-text {
+  position: absolute;
+  bottom: 20px; /* Provides space from the bottom of the image */
+  left: 20px; /* Space from the left */
+  z-index: 10; /* Ensure text is on top of the image */
+  max-width: 80%; /* Limit the width to avoid overflowing */
+  border-radius: 5px; /* Optional: rounded corners for text box */
+}
+
+.carousel-text h3 {
+  font-size: 2vw; /* Responsive font size based on viewport width */
+  margin: 0;
+}
+
+.carousel-text p {
+  font-size: 1.5vw; /* Responsive font size for paragraph */
+  margin: 5px 0 0;
+}
+
+@media (max-width: 768px) {
+  .carousel-text h3 {
+    font-size: 4vw; /* Larger font for smaller screens */
+  }
+
+  .carousel-text p {
+    font-size: 3vw; /* Adjust paragraph font size for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-text {
+    bottom: 10px; /* Less space at the bottom for smaller screens */
+    left: 10px; /* Less space at the left for smaller screens */
+    padding: 10px; /* Less padding for smaller screens */
+    max-width: 90%; /* More width for text on small screens */
+  }
+
+  .carousel-text h3 {
+    font-size: 5vw; /* Even larger font for very small screens */
+  }
+
+  .carousel-text p {
+    font-size: 4vw; /* Adjust paragraph font size further */
+  }
+}
