@@ -63,49 +63,51 @@
 
 
   
-  .grid2-gradient-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 15px;
-    right: 15px;
-    height: 100%; /* Adjust based on how much of the image you want covered */
-    background: linear-gradient(184deg, rgba(81,194,251,0) 0%, rgba(11,56,109,1) 100%);
-    pointer-events: none;
-    z-index: 1;
-  } 
-  
+.grid2-gradient-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+  right: 15px;
+  height: 100%; /* Adjust based on how much of the image you want covered */
+  background: linear-gradient(184deg, rgba(81,194,251,0) 0%, rgba(11,56,109,1) 100%);
+  pointer-events: none;
+  z-index: 1;
+} 
+
+.grid2-text-overlay {
+  position: absolute;
+  bottom: -2px; /* Adjust positioning if needed */
+  left: 10px;
+  z-index: 2;
+}
+
+.grid2-text-overlay h5 {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: white;
+}
+
+.grid2-text-overlay p {
+  font-size: 0.875rem;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
   .grid2-text-overlay {
     position: absolute;
-    bottom: -2px; /* Adjust positioning if needed */
+    bottom: -5px; 
     left: 10px;
     z-index: 2;
   }
-  
   .grid2-text-overlay h5 {
-    margin-bottom: 0.5rem;
-    font-size: 1.25rem;
-    text-decoration: none;
-    color: white;
+    font-size: 0.830rem; /* Smaller text on mobile */
   }
-  
   .grid2-text-overlay p {
-    font-size: 0.875rem; /* Optional: Adjust font size */
+    font-size: 0.660rem; /* Smaller text on mobile */
   }
-  
-  @media (max-width: 768px) {
-    .grid2-text-overlay {
-      position: absolute;
-      bottom: -5px; /* Adjust positioning if needed */
-      left: 10px;
-      z-index: 2;
-    }
-    .grid2-text-overlay h5 {
-        font-size: 0.830rem; /* Smaller text on mobile */
-    }
-    .grid2-text-overlay p {
-      font-size: 0.660rem; /* Smaller text on mobile */
-    }
-  }
+}
+
 
 
 
@@ -171,8 +173,8 @@
   color: white;
 }
 
-.grid4-text-overlay h5 {
-  font-size: 0.950rem;
+.grid4-text-overlay h4 {
+  font-size: 1.2rem;
   margin-bottom: 0.5rem;
   text-decoration: none;
   color: white;
